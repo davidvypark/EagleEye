@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4961CBD445D9E289973F9FEA /* Pods_Eagle_Eye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01DF8E6045EA95E7DB55A1E /* Pods_Eagle_Eye.framework */; };
 		FFF29B3A1D2B2A6800D8053C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B391D2B2A6800D8053C /* AppDelegate.swift */; };
 		FFF29B3C1D2B2A6800D8053C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B3B1D2B2A6800D8053C /* ViewController.swift */; };
-		FFF29B3F1D2B2A6800D8053C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B3D1D2B2A6800D8053C /* Main.storyboard */; };
 		FFF29B411D2B2A6800D8053C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B401D2B2A6800D8053C /* Assets.xcassets */; };
 		FFF29B441D2B2A6800D8053C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B421D2B2A6800D8053C /* LaunchScreen.storyboard */; };
 		FFF29B511D2DA0CA00D8053C /* EquationsAndFormulae.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */; };
+		FFF8F2361D3491BF00F1575D /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8F2351D3491BF00F1575D /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2593DD21C2A252F2C9194759 /* Pods-Eagle-Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle-Eye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye.release.xcconfig"; sourceTree = "<group>"; };
+		7EE0FB2D0C7EBAE8184012C0 /* Pods-Eagle-Eye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle-Eye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye.debug.xcconfig"; sourceTree = "<group>"; };
+		B01DF8E6045EA95E7DB55A1E /* Pods_Eagle_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eagle_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF29B361D2B2A6800D8053C /* Eagle-Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eagle-Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF29B391D2B2A6800D8053C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF29B3B1D2B2A6800D8053C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FFF29B3E1D2B2A6800D8053C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFF29B401D2B2A6800D8053C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF29B431D2B2A6800D8053C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF29B451D2B2A6800D8053C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationsAndFormulae.swift; sourceTree = "<group>"; };
+		FFF8F2351D3491BF00F1575D /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		FFF8F23A1D3690F800F1575D /* PIRipple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PIRipple.framework; path = "Pods/../build/Debug-iphoneos/PIRipple/PIRipple.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4961CBD445D9E289973F9FEA /* Pods_Eagle_Eye.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53BAECBA3B6231F260F3BEF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8F23A1D3690F800F1575D /* PIRipple.framework */,
+				B01DF8E6045EA95E7DB55A1E /* Pods_Eagle_Eye.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B4671BC9BFAA9610B067D95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EE0FB2D0C7EBAE8184012C0 /* Pods-Eagle-Eye.debug.xcconfig */,
+				2593DD21C2A252F2C9194759 /* Pods-Eagle-Eye.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FFF29B2D1D2B2A6800D8053C = {
 			isa = PBXGroup;
 			children = (
 				FFF29B381D2B2A6800D8053C /* Eagle-Eye */,
 				FFF29B371D2B2A6800D8053C /* Products */,
+				9B4671BC9BFAA9610B067D95 /* Pods */,
+				53BAECBA3B6231F260F3BEF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +82,11 @@
 		FFF29B381D2B2A6800D8053C /* Eagle-Eye */ = {
 			isa = PBXGroup;
 			children = (
-				FFF29B3D1D2B2A6800D8053C /* Main.storyboard */,
 				FFF29B391D2B2A6800D8053C /* AppDelegate.swift */,
 				FFF29B3B1D2B2A6800D8053C /* ViewController.swift */,
 				FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */,
 				FFF29B401D2B2A6800D8053C /* Assets.xcassets */,
+				FFF8F2351D3491BF00F1575D /* UIColorExtensions.swift */,
 				FFF29B421D2B2A6800D8053C /* LaunchScreen.storyboard */,
 				FFF29B451D2B2A6800D8053C /* Info.plist */,
 			);
@@ -74,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF29B481D2B2A6800D8053C /* Build configuration list for PBXNativeTarget "Eagle-Eye" */;
 			buildPhases = (
+				8627492EE21D49769D04B9E1 /* [CP] Check Pods Manifest.lock */,
 				FFF29B321D2B2A6800D8053C /* Sources */,
 				FFF29B331D2B2A6800D8053C /* Frameworks */,
 				FFF29B341D2B2A6800D8053C /* Resources */,
+				1F83422B17CD23757D579726 /* [CP] Embed Pods Frameworks */,
+				14CE2E968DCD87F6568CF9A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,11 +157,58 @@
 			files = (
 				FFF29B441D2B2A6800D8053C /* LaunchScreen.storyboard in Resources */,
 				FFF29B411D2B2A6800D8053C /* Assets.xcassets in Resources */,
-				FFF29B3F1D2B2A6800D8053C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14CE2E968DCD87F6568CF9A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F83422B17CD23757D579726 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8627492EE21D49769D04B9E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFF29B321D2B2A6800D8053C /* Sources */ = {
@@ -142,20 +218,13 @@
 				FFF29B511D2DA0CA00D8053C /* EquationsAndFormulae.swift in Sources */,
 				FFF29B3C1D2B2A6800D8053C /* ViewController.swift in Sources */,
 				FFF29B3A1D2B2A6800D8053C /* AppDelegate.swift in Sources */,
+				FFF8F2361D3491BF00F1575D /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FFF29B3D1D2B2A6800D8053C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFF29B3E1D2B2A6800D8053C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FFF29B421D2B2A6800D8053C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -254,8 +323,13 @@
 		};
 		FFF29B491D2B2A6800D8053C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE0FB2D0C7EBAE8184012C0 /* Pods-Eagle-Eye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PIRipple",
+				);
 				INFOPLIST_FILE = "Eagle-Eye/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DavidVY.Eagle-Eye";
@@ -265,8 +339,13 @@
 		};
 		FFF29B4A1D2B2A6800D8053C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2593DD21C2A252F2C9194759 /* Pods-Eagle-Eye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PIRipple",
+				);
 				INFOPLIST_FILE = "Eagle-Eye/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DavidVY.Eagle-Eye";

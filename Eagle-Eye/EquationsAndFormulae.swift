@@ -10,10 +10,10 @@ import Foundation
 
 func hexOffsetValue(round: Int) -> Float {
     
-    return 50/(Float(round)/2)
+    return 0.2/(Float(round)/8)
 }
 
 func generateDimensionsOfGrid(round: Int) -> Int{
     
-    return Int(6-(6/(0.3 * Double(round+4))))
+    return Int(7-(7/(0.3 * Double(round+4))))
 }

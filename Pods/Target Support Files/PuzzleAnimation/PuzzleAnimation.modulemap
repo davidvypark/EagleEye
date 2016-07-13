@@ -1,0 +1,6 @@
+framework module PuzzleAnimation {
+  umbrella header "PuzzleAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

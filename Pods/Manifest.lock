@@ -1,0 +1,12 @@
+PODS:
+  - PuzzleAnimation (1.1.1)
+
+DEPENDENCIES:
+  - PuzzleAnimation (~> 1.1)
+
+SPEC CHECKSUMS:
+  PuzzleAnimation: 8118d850cafb4ff120d18f04e641c6a687f3c8c0
+
+PODFILE CHECKSUM: e654d480dbc897ba8e73bc582efe0eaa2b28ca73
+
+COCOAPODS: 1.0.1

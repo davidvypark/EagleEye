@@ -7,125 +7,150 @@
 //
 
 import UIKit
+import PuzzleAnimation
 
-var currentLevel: Int!
-
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
-    //let hexOffset: CGFloat!
-    let randomRed = CGFloat(drand48())
-    let randomGreen = CGFloat(drand48())
-    let randomBlue = CGFloat(drand48())
+    var collectionView: UICollectionView!
+    var buttonArray = [UIButton]()
+    var round = 0
+    var highscore = 0
+    var lives = 5
+    var randomColor = UIColor()
+    var currentDimension: Int!
+    var randomBlockIndex: Int!
+    var livesLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
+    private var backwardAnimation: PuzzleAnimation?
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        generateButtons()
+        
+        nextRound()
+        
     }
     
-    func colorButton(withColor color:UIColor) -> UIButton {
-        let newButton = UIButton(type: .System)
-        newButton.backgroundColor = color
-        newButton.setTitle("Normal", forState: .Normal)
-        newButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        return newButton
-    }
-    
-    func generateButtons(){
-        currentLevel = 5
-        var currentDimension = 5
+    func setupGrid() {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
 
-        print(String(randomRed) + "__" + String(randomGreen) + "__" + String(randomBlue))
-        //let randomButtonIndexToAlter = 1 + arc4random_uniform(3)
+        //item size
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 5
+        let blockDemension = (self.view.frame.width - 40 - 5*(CGFloat(currentDimension) - 1)) / CGFloat(currentDimension)
+        layout.itemSize = CGSize(width: blockDemension, height: blockDemension)
         
-        //let basicRandomColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView.backgroundColor = UIColor.cloudsColor()          //cloudsColorDefault
+        self.view.addSubview(collectionView)
         
-        var buttonArray1 = [UIButton]()
-        var buttonArray2 = [UIButton]()
-        var buttonArray3 = [UIButton]()
-        var buttonArray4 = [UIButton]()
-        var buttonArray5 = [UIButton]()
+    }
+    
+    func setupScene() {
         
-        while (currentDimension > 0) {
-            buttonArray1 += [colorButton(withColor: UIColor.blueColor())]
-            buttonArray2 += [colorButton(withColor: UIColor.blueColor())]
-            buttonArray3 += [colorButton(withColor: UIColor.blueColor())]
-            buttonArray4 += [colorButton(withColor: UIColor.blueColor())]
-            buttonArray5 += [colorButton(withColor: UIColor.blueColor())]
-            
-            currentDimension -= 1
+        //livesLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
+        livesLabel.text = "Lives: " + String(lives)
+        self.view.addSubview(livesLabel)
+        livesLabel.center = CGPointMake(self.view.frame.width/2, (12/16)*self.view.frame.height)
+        livesLabel.textAlignment = NSTextAlignment.Center
+        
+        let roundLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
+        roundLabel.text = "Round: " + String(round)
+        self.view.addSubview(roundLabel)
+        roundLabel.center = CGPointMake(self.view.frame.width/2, (13/16)*self.view.frame.height)
+        roundLabel.textAlignment = NSTextAlignment.Center
+        
+    }
+    
+    func gameOverScene() {
+        
+        let resetButton = UIButton(frame: CGRectMake(0, 0, 200, 21))
+        resetButton.setTitle("RESET", forState: .Normal)
+        resetButton.addTarget(self, action: #selector(resetButtonPressed), forControlEvents: .TouchUpInside)
+        resetButton.setTitleColor(UIColor.wetAsphaltColor(), forState: .Normal)
+        self.view.addSubview(resetButton)
+        resetButton.center = CGPointMake(self.view.frame.width/2, (7/8)*self.view.frame.height)
+    }
+    
+    func resetButtonPressed(sender: UIButton) {
+        round = 0
+        lives = 5
+        puzzleAnimate()
+        nextRound()
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return numberOfBoxes()
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
+        
+        let normalHexValues = randomColor.getHexComponent()
+        let offsetValue = CGFloat(hexOffsetValue(round))
+        let offSetColor = UIColor(red: normalHexValues![0] - offsetValue, green: normalHexValues![1] - offsetValue, blue: normalHexValues![2] - offsetValue, alpha: 1)
+        if (indexPath.row == randomBlockIndex) {
+            cell.backgroundColor = offSetColor
+        } else {
+            cell.backgroundColor = randomColor
         }
         
-        //subviews
-        let subStackView1 = UIStackView(arrangedSubviews: buttonArray1)
-        subStackView1.axis = .Horizontal
-        subStackView1.distribution = .FillEqually
-        subStackView1.alignment = .Fill
-        subStackView1.spacing = 5
-        
-        //another stackview
-
-        let subStackView2 = UIStackView(arrangedSubviews: buttonArray2)
-        subStackView2.axis = .Horizontal
-        subStackView2.distribution = .FillEqually
-        subStackView2.alignment = .Fill
-        subStackView2.spacing = 5
-        
-        //yet another stackview
-        
-        let subStackView3 = UIStackView(arrangedSubviews: buttonArray3)
-        subStackView3.axis = .Horizontal
-        subStackView3.distribution = .FillEqually
-        subStackView3.alignment = .Fill
-        subStackView3.spacing = 5
-        
-        //and another one
-        
-        let subStackView4 = UIStackView(arrangedSubviews: buttonArray4)
-        subStackView4.axis = .Horizontal
-        subStackView4.distribution = .FillEqually
-        subStackView4.alignment = .Fill
-        subStackView4.spacing = 5
-        
-        //and another one
-        
-        let subStackView5 = UIStackView(arrangedSubviews: buttonArray5)
-        subStackView5.axis = .Horizontal
-        subStackView5.distribution = .FillEqually
-        subStackView5.alignment = .Fill
-        subStackView5.spacing = 5
-        
-        
-        //some random buttons
-//        
-//        let blueButton = colorButton(withColor: UIColor.blueColor(), title: "Blue Button")
-//        
-//        let redButton = colorButton(withColor: UIColor.redColor(), title: "Red Button")
-//        
-//        let blackButton = colorButton(withColor: UIColor.blackColor(), title: "Black Button")
-        
-        
-        let stackView = UIStackView(arrangedSubviews: [subStackView1, subStackView2, subStackView3, subStackView4, subStackView5])
-        stackView.axis = .Vertical
-        stackView.distribution = .FillEqually
-        stackView.alignment = .Fill
-        stackView.spacing = 5
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(stackView)
+        return cell
+    }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        //this constrainswithvisualformat thing is pretty cool
-        let viewsDictionary = ["stackView":stackView]
-        let stackView_H = NSLayoutConstraint.constraintsWithVisualFormat("H:|-20-[stackView]-20-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary)
-        let stackView_V = NSLayoutConstraint.constraintsWithVisualFormat("V:|-20-[stackView]-20-|", options: NSLayoutFormatOptions(rawValue:0), metrics: nil, views: viewsDictionary)
-        view.addConstraints(stackView_H)
-        view.addConstraints(stackView_V)
+        if (lives == 0 ) {
+            return
+        } else {
+            if (indexPath.row == randomBlockIndex) {
+                if ((round + 1) % 25 == 0) {                                    //+1 life every 25 levels
+                    lives += 1                                                  //Need something to pop up and say +1
+                }
+                nextRound()
+            } else {
+                lives -= 1
+                
+                if (lives == 0) {
+                    gameOverScene()
+                    self.livesLabel.text = "Lives: " + String(lives)
+                } else {
+                    self.livesLabel.text = "Lives: " + String(lives)
+                }
+            }
+        }
+    }
+    
+    func numberOfBoxes() -> Int {
+        return currentDimension * currentDimension
+    }
+    
+    func nextRound() {
         
+        randomColor = UIColor.randomCustomColor()
+        round += 1
+        
+        currentDimension = generateDimensionsOfGrid(round)
+        randomBlockIndex = Int(arc4random_uniform(UInt32(numberOfBoxes())))
+        
+        setupGrid()
+        setupScene()
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func puzzleAnimate() {
+        var backwardConfiguration = PuzzleAnimationConfiguration()
+        backwardConfiguration.animationVelocity = 20
+        backwardConfiguration.pieceAnimationDelay = defaultBackwardPieceAnimationDelay
+        backwardConfiguration.pieceGroupAnimationDelay = defaultBackwardPieceGroupAnimationDelay
+        self.backwardAnimation = BackwardPuzzleAnimation(viewToAnimate: self.view, configuration: backwardConfiguration)
+        self.backwardAnimation!.start()
     }
+    
 
 }
 
