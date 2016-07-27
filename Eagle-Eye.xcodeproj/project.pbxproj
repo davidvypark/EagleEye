@@ -14,7 +14,21 @@
 		FFF29B441D2B2A6800D8053C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B421D2B2A6800D8053C /* LaunchScreen.storyboard */; };
 		FFF29B511D2DA0CA00D8053C /* EquationsAndFormulae.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */; };
 		FFF8F2361D3491BF00F1575D /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8F2351D3491BF00F1575D /* UIColorExtensions.swift */; };
+		FFF8F23F1D37C93A00F1575D /* PopSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF8F23E1D37C93A00F1575D /* PopSoundEffect.mp3 */; };
+		FFF8F2411D37E38500F1575D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8F2401D37E38500F1575D /* UIViewExtensions.swift */; };
+		FFF8F2981D3D5D9C00F1575D /* Eagle_EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8F2971D3D5D9C00F1575D /* Eagle_EyeUITests.swift */; };
+		FFF8F2A01D3D5DB900F1575D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8F29F1D3D5DB900F1575D /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFF8F29A1D3D5D9C00F1575D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF29B2E1D2B2A6800D8053C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF29B351D2B2A6800D8053C;
+			remoteInfo = "Eagle-Eye";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2593DD21C2A252F2C9194759 /* Pods-Eagle-Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle-Eye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye.release.xcconfig"; sourceTree = "<group>"; };
@@ -29,6 +43,12 @@
 		FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationsAndFormulae.swift; sourceTree = "<group>"; };
 		FFF8F2351D3491BF00F1575D /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		FFF8F23A1D3690F800F1575D /* PIRipple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PIRipple.framework; path = "Pods/../build/Debug-iphoneos/PIRipple/PIRipple.framework"; sourceTree = "<group>"; };
+		FFF8F23E1D37C93A00F1575D /* PopSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PopSoundEffect.mp3; sourceTree = "<group>"; };
+		FFF8F2401D37E38500F1575D /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		FFF8F2951D3D5D9C00F1575D /* Eagle-EyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eagle-EyeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF8F2971D3D5D9C00F1575D /* Eagle_EyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eagle_EyeUITests.swift; sourceTree = "<group>"; };
+		FFF8F2991D3D5D9C00F1575D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF8F29F1D3D5DB900F1575D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4961CBD445D9E289973F9FEA /* Pods_Eagle_Eye.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF8F2921D3D5D9C00F1575D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF29B381D2B2A6800D8053C /* Eagle-Eye */,
+				FFF8F2961D3D5D9C00F1575D /* Eagle-EyeUITests */,
 				FFF29B371D2B2A6800D8053C /* Products */,
 				9B4671BC9BFAA9610B067D95 /* Pods */,
 				53BAECBA3B6231F260F3BEF1 /* Frameworks */,
@@ -75,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF29B361D2B2A6800D8053C /* Eagle-Eye.app */,
+				FFF8F2951D3D5D9C00F1575D /* Eagle-EyeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,10 +116,22 @@
 				FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */,
 				FFF29B401D2B2A6800D8053C /* Assets.xcassets */,
 				FFF8F2351D3491BF00F1575D /* UIColorExtensions.swift */,
+				FFF8F2401D37E38500F1575D /* UIViewExtensions.swift */,
 				FFF29B421D2B2A6800D8053C /* LaunchScreen.storyboard */,
 				FFF29B451D2B2A6800D8053C /* Info.plist */,
+				FFF8F23E1D37C93A00F1575D /* PopSoundEffect.mp3 */,
 			);
 			path = "Eagle-Eye";
+			sourceTree = "<group>";
+		};
+		FFF8F2961D3D5D9C00F1575D /* Eagle-EyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8F29F1D3D5DB900F1575D /* SnapshotHelper.swift */,
+				FFF8F2971D3D5D9C00F1575D /* Eagle_EyeUITests.swift */,
+				FFF8F2991D3D5D9C00F1575D /* Info.plist */,
+			);
+			path = "Eagle-EyeUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +147,7 @@
 				FFF29B341D2B2A6800D8053C /* Resources */,
 				1F83422B17CD23757D579726 /* [CP] Embed Pods Frameworks */,
 				14CE2E968DCD87F6568CF9A2 /* [CP] Copy Pods Resources */,
+				FFF8F24A1D391EAE00F1575D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -115,6 +157,24 @@
 			productName = "Eagle-Eye";
 			productReference = FFF29B361D2B2A6800D8053C /* Eagle-Eye.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FFF8F2941D3D5D9C00F1575D /* Eagle-EyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF8F29C1D3D5D9C00F1575D /* Build configuration list for PBXNativeTarget "Eagle-EyeUITests" */;
+			buildPhases = (
+				FFF8F2911D3D5D9C00F1575D /* Sources */,
+				FFF8F2921D3D5D9C00F1575D /* Frameworks */,
+				FFF8F2931D3D5D9C00F1575D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFF8F29B1D3D5D9C00F1575D /* PBXTargetDependency */,
+			);
+			name = "Eagle-EyeUITests";
+			productName = "Eagle-EyeUITests";
+			productReference = FFF8F2951D3D5D9C00F1575D /* Eagle-EyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -128,7 +188,12 @@
 				TargetAttributes = {
 					FFF29B351D2B2A6800D8053C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = JKHZT4LSSL;
+					};
+					FFF8F2941D3D5D9C00F1575D = {
+						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = C7U2ZE2237;
+						TestTargetID = FFF29B351D2B2A6800D8053C;
 					};
 				};
 			};
@@ -146,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				FFF29B351D2B2A6800D8053C /* Eagle-Eye */,
+				FFF8F2941D3D5D9C00F1575D /* Eagle-EyeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,7 +222,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF29B441D2B2A6800D8053C /* LaunchScreen.storyboard in Resources */,
+				FFF8F23F1D37C93A00F1575D /* PopSoundEffect.mp3 in Resources */,
 				FFF29B411D2B2A6800D8053C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF8F2931D3D5D9C00F1575D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +282,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		FFF8F24A1D391EAE00F1575D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0c1cbf7bf354121846eee25271427412131931f2 ca2d886785f11324f394e06a1d345dd34e5e4cd10b7f2017517661e5b5bf1c1c";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,13 +303,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF29B511D2DA0CA00D8053C /* EquationsAndFormulae.swift in Sources */,
+				FFF8F2411D37E38500F1575D /* UIViewExtensions.swift in Sources */,
 				FFF29B3C1D2B2A6800D8053C /* ViewController.swift in Sources */,
 				FFF29B3A1D2B2A6800D8053C /* AppDelegate.swift in Sources */,
 				FFF8F2361D3491BF00F1575D /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFF8F2911D3D5D9C00F1575D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF8F2981D3D5D9C00F1575D /* Eagle_EyeUITests.swift in Sources */,
+				FFF8F2A01D3D5DB900F1575D /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFF8F29B1D3D5D9C00F1575D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF29B351D2B2A6800D8053C /* Eagle-Eye */;
+			targetProxy = FFF8F29A1D3D5D9C00F1575D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FFF29B421D2B2A6800D8053C /* LaunchScreen.storyboard */ = {
@@ -326,14 +431,18 @@
 			baseConfigurationReference = 7EE0FB2D0C7EBAE8184012C0 /* Pods-Eagle-Eye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PIRipple",
 				);
 				INFOPLIST_FILE = "Eagle-Eye/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DavidVY.Eagle-Eye";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidvypark.EagleEyed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -342,14 +451,40 @@
 			baseConfigurationReference = 2593DD21C2A252F2C9194759 /* Pods-Eagle-Eye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PIRipple",
 				);
 				INFOPLIST_FILE = "Eagle-Eye/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DavidVY.Eagle-Eye";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidvypark.EagleEyed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FFF8F29D1D3D5D9C00F1575D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Eagle-EyeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DavidVY.Eagle-EyeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Eagle-Eye";
+			};
+			name = Debug;
+		};
+		FFF8F29E1D3D5D9C00F1575D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Eagle-EyeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DavidVY.Eagle-EyeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Eagle-Eye";
 			};
 			name = Release;
 		};
@@ -370,6 +505,15 @@
 			buildConfigurations = (
 				FFF29B491D2B2A6800D8053C /* Debug */,
 				FFF29B4A1D2B2A6800D8053C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF8F29C1D3D5D9C00F1575D /* Build configuration list for PBXNativeTarget "Eagle-EyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF8F29D1D3D5D9C00F1575D /* Debug */,
+				FFF8F29E1D3D5D9C00F1575D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

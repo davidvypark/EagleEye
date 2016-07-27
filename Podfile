@@ -8,5 +8,7 @@ target 'Eagle-Eye' do
   # Pods for Eagle-Eye
   
   pod 'PuzzleAnimation', '~> 1.1'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
 end

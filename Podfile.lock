@@ -1,12 +1,19 @@
 PODS:
+  - Crashlytics (3.7.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - PuzzleAnimation (1.1.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - PuzzleAnimation (~> 1.1)
 
 SPEC CHECKSUMS:
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   PuzzleAnimation: 8118d850cafb4ff120d18f04e641c6a687f3c8c0
 
-PODFILE CHECKSUM: e654d480dbc897ba8e73bc582efe0eaa2b28ca73
+PODFILE CHECKSUM: 5b5a27b9fb58d50908347c2cdc4091e8041281d6
 
 COCOAPODS: 1.0.1

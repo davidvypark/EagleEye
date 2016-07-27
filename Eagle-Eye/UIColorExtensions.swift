@@ -1,11 +1,11 @@
 //
-//  UIColorExtensions.swift
 //
-//  Created by Mihails Tumkins on 10/02/15.
+//  Created by David Park on 7/6/16.
+//  Copyright © 2016 David Park. All rights reserved.
 //
 
+
 import UIKit
-var offset = 0
 
 extension UIColor {
     convenience init(r: Int, g:Int , b:Int) {
@@ -95,13 +95,16 @@ extension UIColor {
         return customColorArray[Int(randomIndex)]
     }
     
+    class func randomColor()-> UIColor {
+        return UIColor(r: Int(arc4random_uniform(256)), g: Int(arc4random_uniform(256)), b: Int(arc4random_uniform(256)))
+
+    }
+    
     func getHexComponent() -> [CGFloat]? {
         var (red, green, blue, alpha) = (CGFloat(0.0), CGFloat(0.0), CGFloat(0.0), CGFloat(0.0))
         if getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
             return [red, green, blue]
-
         } else {
-            print("nil triggered")
             return nil
         }
     }

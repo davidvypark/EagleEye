@@ -7,27 +7,44 @@
 //
 
 import UIKit
+import AVFoundation
 import PuzzleAnimation
 
-class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    
+class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, AVAudioPlayerDelegate {
+	
+	let savedDefaults = NSUserDefaults.standardUserDefaults()
+	
     var collectionView: UICollectionView!
-    var buttonArray = [UIButton]()
     var round = 0
     var highscore = 0
     var lives = 5
     var randomColor = UIColor()
     var currentDimension: Int!
     var randomBlockIndex: Int!
-    var livesLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
+    var soundOn = true
+    
+    var livesLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
+    var notifyLabel = UILabel()
+    var audioPlayer = AVAudioPlayer()
+    var muteButton = UIButton(type: UIButtonType.Custom) as UIButton
+    
     private var backwardAnimation: PuzzleAnimation?
+	
+	override func viewWillAppear(animated: Bool) {
+		loadData()
+	}
+	
+	override func viewWillDisappear(animated: Bool) {
+		saveData()
+	}
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		loadData()
+        muteButton.setImage(UIImage(named: "sound"), forState: .Normal)
         
         nextRound()
-        
     }
     
     func setupGrid() {
@@ -46,33 +63,78 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         collectionView.backgroundColor = UIColor.cloudsColor()          //cloudsColorDefault
         self.view.addSubview(collectionView)
-        
     }
     
     func setupScene() {
         
-        //livesLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
         livesLabel.text = "Lives: " + String(lives)
         self.view.addSubview(livesLabel)
-        livesLabel.center = CGPointMake(self.view.frame.width/2, (12/16)*self.view.frame.height)
+        livesLabel.center = CGPointMake(self.view.frame.width/2, (11/16)*self.view.frame.height)
         livesLabel.textAlignment = NSTextAlignment.Center
+        livesLabel.backgroundColor = UIColor.silverColor()
+        livesLabel.font = UIFont(name: "Helvetica", size: livesLabel.font.pointSize)
         
-        let roundLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
+        let roundLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
         roundLabel.text = "Round: " + String(round)
         self.view.addSubview(roundLabel)
-        roundLabel.center = CGPointMake(self.view.frame.width/2, (13/16)*self.view.frame.height)
+        roundLabel.center = CGPointMake(self.view.frame.width/2, (12/16)*self.view.frame.height)
         roundLabel.textAlignment = NSTextAlignment.Center
+        roundLabel.backgroundColor = UIColor.silverColor()
+        roundLabel.font = UIFont(name: "Helvetica", size: roundLabel.font.pointSize)
+		
+		let highscoreLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
+		highscoreLabel.text = "Highscore: " + String(highscore)
+		self.view.addSubview(highscoreLabel)
+		highscoreLabel.center = CGPointMake((self.view.frame.width/2), (13/16)*self.view.frame.height)
+		highscoreLabel.textAlignment = NSTextAlignment.Center
+		highscoreLabel.backgroundColor = UIColor.silverColor()
+		highscoreLabel.font = UIFont(name: "Helvetica", size: highscoreLabel.font.pointSize)
+		
+        notifyLabel = UILabel(frame: CGRectMake(0, 0, 300, 50))
+        self.view.addSubview(notifyLabel)
+        notifyLabel.center = CGPointMake(self.view.frame.width/2, (19/32)*self.view.frame.height)
+        notifyLabel.textAlignment = NSTextAlignment.Center
+        notifyLabel.font = UIFont(name: "Helvetica", size: 20)
         
+        if (round < 7) {
+            notifyLabel.text = "one of these does not belong"
+            if (round == 6) {
+                notifyLabel.fadeOut()
+            }
+        } else if (round % 25 == 0) {
+            notifyLabel.alpha = 0.0
+            notifyLabel.text = "+1 Life"
+            notifyLabel.font = UIFont(name: "Helvetica", size: 30)
+            //notifyLabel.fadeIn()
+            notifyLabel.moveCenterTo(CGPointMake(self.view.frame.width/2, (11/16)*self.view.frame.height), returnPoint: CGPointMake(self.view.frame.width/2, (10/16)*self.view.frame.height))
+        }
+        
+        muteButton = UIButton(frame: CGRectMake(0, 0, 50, 50))
+        muteButton.addTarget(self, action: #selector(muteButtonPressed), forControlEvents: .TouchUpInside)
+        self.view.addSubview(muteButton)
+        muteButton.center = CGPointMake((2/16)*self.view.frame.width, (15/16)*self.view.frame.height)
+        
+        if soundOn {
+            muteButton.setImage(UIImage(named: "sound"), forState: .Normal)
+        } else {
+            muteButton.setImage(UIImage(named: "mute"), forState: .Normal)
+        }
+
     }
     
     func gameOverScene() {
         
-        let resetButton = UIButton(frame: CGRectMake(0, 0, 200, 21))
-        resetButton.setTitle("RESET", forState: .Normal)
+        notifyLabel.alpha = 0.0
+        notifyLabel.text = "Game Over"
+        notifyLabel.fadeIn()
+        
+        let resetButton = UIButton(frame: CGRectMake(0, 0, 200, 40))
+        resetButton.setTitle("~NEW GAME~", forState: .Normal)
         resetButton.addTarget(self, action: #selector(resetButtonPressed), forControlEvents: .TouchUpInside)
         resetButton.setTitleColor(UIColor.wetAsphaltColor(), forState: .Normal)
         self.view.addSubview(resetButton)
         resetButton.center = CGPointMake(self.view.frame.width/2, (7/8)*self.view.frame.height)
+        resetButton.backgroundColor = UIColor.concreteColor()
     }
     
     func resetButtonPressed(sender: UIButton) {
@@ -80,7 +142,6 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         lives = 5
         puzzleAnimate()
         nextRound()
-        
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -111,6 +172,22 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
                 if ((round + 1) % 25 == 0) {                                    //+1 life every 25 levels
                     lives += 1                                                  //Need something to pop up and say +1
                 }
+                let popSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("PopSoundEffect", ofType: "mp3")!)
+                do{
+                    audioPlayer = try AVAudioPlayer(contentsOfURL:popSound)
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.delegate = self
+                    if soundOn {
+                        audioPlayer.play()
+                    }
+                } catch {
+                    //print("Error getting the audio file")
+                }
+				
+				if (round >= highscore) {
+					highscore = round + 1
+				}
+
                 nextRound()
             } else {
                 lives -= 1
@@ -139,17 +216,34 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         
         setupGrid()
         setupScene()
-        
     }
     
     func puzzleAnimate() {
         var backwardConfiguration = PuzzleAnimationConfiguration()
-        backwardConfiguration.animationVelocity = 20
+        backwardConfiguration.animationVelocity = 25
         backwardConfiguration.pieceAnimationDelay = defaultBackwardPieceAnimationDelay
         backwardConfiguration.pieceGroupAnimationDelay = defaultBackwardPieceGroupAnimationDelay
         self.backwardAnimation = BackwardPuzzleAnimation(viewToAnimate: self.view, configuration: backwardConfiguration)
         self.backwardAnimation!.start()
     }
+    
+    func muteButtonPressed (sender: UIButton) {
+        soundOn = !soundOn
+        if soundOn {
+            muteButton.setImage(UIImage(named: "sound"), forState: .Normal)
+        } else {
+            muteButton.setImage(UIImage(named: "mute"), forState: .Normal)
+        }
+    }
+	
+	func saveData() {
+		savedDefaults.setObject(highscore, forKey: "highscore")
+	}
+	
+	func loadData() {
+		highscore = savedDefaults.integerForKey("highscore")
+	}
+    
     
 
 }
