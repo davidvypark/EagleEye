@@ -170,19 +170,15 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         } else {
             if (indexPath.row == randomBlockIndex) {
                 if ((round + 1) % 25 == 0) {                                    //+1 life every 25 levels
-                    lives += 1                                                  //Need something to pop up and say +1
+                    lives += 1
                 }
-                let popSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("PopSoundEffect", ofType: "mp3")!)
-                do{
-                    audioPlayer = try AVAudioPlayer(contentsOfURL:popSound)
-                    audioPlayer.prepareToPlay()
-                    audioPlayer.delegate = self
-                    if soundOn {
-                        audioPlayer.play()
-                    }
-                } catch {
-                    //print("Error getting the audio file")
-                }
+				//pop sound
+				self.popSound()
+				
+				
+				
+				
+				
 				
 				if (round >= highscore) {
 					highscore = round + 1
@@ -243,8 +239,27 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
 	func loadData() {
 		highscore = savedDefaults.integerForKey("highscore")
 	}
-    
-    
+	
+	func popSound() {
+		let sess = AVAudioSession.sharedInstance()
+		if sess.otherAudioPlaying {
+			_ = try? sess.setCategory(AVAudioSessionCategoryAmbient, withOptions: [])
+			_ = try? sess.setActive(true, withOptions: [])
+		}
+		let popSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("PopSoundEffect", ofType: "mp3")!)
+		do{
+			audioPlayer = try AVAudioPlayer(contentsOfURL:popSound)
+			audioPlayer.prepareToPlay()
+			audioPlayer.delegate = self
+			if soundOn {
+				audioPlayer.play()
+			}
+		} catch {
+			//print("Error getting the audio file")
+		}
+
+	}
+	
 
 }
 
