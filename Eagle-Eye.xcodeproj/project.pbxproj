@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4961CBD445D9E289973F9FEA /* Pods_Eagle_Eye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01DF8E6045EA95E7DB55A1E /* Pods_Eagle_Eye.framework */; };
+		FFE94AB01D57C25A0036ED38 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE94AAF1D57C25A0036ED38 /* MenuViewController.swift */; };
 		FFF29B3A1D2B2A6800D8053C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B391D2B2A6800D8053C /* AppDelegate.swift */; };
-		FFF29B3C1D2B2A6800D8053C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B3B1D2B2A6800D8053C /* ViewController.swift */; };
+		FFF29B3C1D2B2A6800D8053C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B3B1D2B2A6800D8053C /* GameViewController.swift */; };
 		FFF29B411D2B2A6800D8053C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B401D2B2A6800D8053C /* Assets.xcassets */; };
 		FFF29B441D2B2A6800D8053C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B421D2B2A6800D8053C /* LaunchScreen.storyboard */; };
 		FFF29B511D2DA0CA00D8053C /* EquationsAndFormulae.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */; };
@@ -34,9 +35,10 @@
 		2593DD21C2A252F2C9194759 /* Pods-Eagle-Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle-Eye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye.release.xcconfig"; sourceTree = "<group>"; };
 		7EE0FB2D0C7EBAE8184012C0 /* Pods-Eagle-Eye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle-Eye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye.debug.xcconfig"; sourceTree = "<group>"; };
 		B01DF8E6045EA95E7DB55A1E /* Pods_Eagle_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eagle_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE94AAF1D57C25A0036ED38 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		FFF29B361D2B2A6800D8053C /* Eagle-Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eagle-Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF29B391D2B2A6800D8053C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFF29B3B1D2B2A6800D8053C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFF29B3B1D2B2A6800D8053C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FFF29B401D2B2A6800D8053C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF29B431D2B2A6800D8053C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF29B451D2B2A6800D8053C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +90,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FFE94AB11D57C25F0036ED38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFE94AAF1D57C25A0036ED38 /* MenuViewController.swift */,
+				FFF29B3B1D2B2A6800D8053C /* GameViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		FFF29B2D1D2B2A6800D8053C = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF29B391D2B2A6800D8053C /* AppDelegate.swift */,
-				FFF29B3B1D2B2A6800D8053C /* ViewController.swift */,
+				FFE94AB11D57C25F0036ED38 /* Views */,
 				FFF29B501D2DA0CA00D8053C /* EquationsAndFormulae.swift */,
 				FFF29B401D2B2A6800D8053C /* Assets.xcassets */,
 				FFF8F2351D3491BF00F1575D /* UIColorExtensions.swift */,
@@ -303,8 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF29B511D2DA0CA00D8053C /* EquationsAndFormulae.swift in Sources */,
+				FFE94AB01D57C25A0036ED38 /* MenuViewController.swift in Sources */,
 				FFF8F2411D37E38500F1575D /* UIViewExtensions.swift in Sources */,
-				FFF29B3C1D2B2A6800D8053C /* ViewController.swift in Sources */,
+				FFF29B3C1D2B2A6800D8053C /* GameViewController.swift in Sources */,
 				FFF29B3A1D2B2A6800D8053C /* AppDelegate.swift in Sources */,
 				FFF8F2361D3491BF00F1575D /* UIColorExtensions.swift in Sources */,
 			);

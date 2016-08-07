@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics.self])
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window!.rootViewController = ViewController()
+        window!.rootViewController = GameViewController()
         window!.backgroundColor = UIColor.cloudsColor()
         window!.makeKeyAndVisible()
         

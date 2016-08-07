@@ -10,5 +10,6 @@ target 'Eagle-Eye' do
   pod 'PuzzleAnimation', '~> 1.1'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod "SimpleAnimation"
 
 end

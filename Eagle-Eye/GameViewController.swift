@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  Eagle-Eye
 //
 //  Created by David Park on 7/4/16.
@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import PuzzleAnimation
 
-class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, AVAudioPlayerDelegate {
+class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, AVAudioPlayerDelegate {
 	
 	let savedDefaults = NSUserDefaults.standardUserDefaults()
 	
@@ -66,13 +66,16 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     }
     
     func setupScene() {
+		let textFont = "Avenir-BookOblique"
         
         livesLabel.text = "Lives: " + String(lives)
         self.view.addSubview(livesLabel)
         livesLabel.center = CGPointMake(self.view.frame.width/2, (11/16)*self.view.frame.height)
         livesLabel.textAlignment = NSTextAlignment.Center
         livesLabel.backgroundColor = UIColor.silverColor()
-        livesLabel.font = UIFont(name: "Helvetica", size: livesLabel.font.pointSize)
+        livesLabel.font = UIFont(name: textFont, size: livesLabel.font.pointSize)
+		livesLabel.layer.masksToBounds = true
+		livesLabel.layer.cornerRadius = 15
         
         let roundLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
         roundLabel.text = "Round: " + String(round)
@@ -80,7 +83,9 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         roundLabel.center = CGPointMake(self.view.frame.width/2, (12/16)*self.view.frame.height)
         roundLabel.textAlignment = NSTextAlignment.Center
         roundLabel.backgroundColor = UIColor.silverColor()
-        roundLabel.font = UIFont(name: "Helvetica", size: roundLabel.font.pointSize)
+        roundLabel.font = UIFont(name: textFont, size: roundLabel.font.pointSize)
+		roundLabel.layer.masksToBounds = true
+		roundLabel.layer.cornerRadius = 15
 		
 		let highscoreLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
 		highscoreLabel.text = "Highscore: " + String(highscore)
@@ -88,13 +93,15 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
 		highscoreLabel.center = CGPointMake((self.view.frame.width/2), (13/16)*self.view.frame.height)
 		highscoreLabel.textAlignment = NSTextAlignment.Center
 		highscoreLabel.backgroundColor = UIColor.silverColor()
-		highscoreLabel.font = UIFont(name: "Helvetica", size: highscoreLabel.font.pointSize)
+		highscoreLabel.font = UIFont(name: textFont, size: highscoreLabel.font.pointSize)
+		highscoreLabel.layer.masksToBounds = true
+		highscoreLabel.layer.cornerRadius = 15
 		
-        notifyLabel = UILabel(frame: CGRectMake(0, 0, 300, 50))
+        notifyLabel = UILabel(frame: CGRectMake(0, 0, 350, 50))
         self.view.addSubview(notifyLabel)
         notifyLabel.center = CGPointMake(self.view.frame.width/2, (19/32)*self.view.frame.height)
         notifyLabel.textAlignment = NSTextAlignment.Center
-        notifyLabel.font = UIFont(name: "Helvetica", size: 20)
+        notifyLabel.font = UIFont(name: textFont, size: 20)
         
         if (round < 7) {
             notifyLabel.text = "one of these does not belong"
