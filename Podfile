@@ -11,5 +11,6 @@ target 'Eagle-Eye' do
   pod 'Fabric'
   pod 'Crashlytics'
   pod "SimpleAnimation"
+  pod 'SnapKit'
 
 end

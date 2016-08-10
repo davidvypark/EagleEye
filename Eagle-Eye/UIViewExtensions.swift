@@ -8,14 +8,15 @@
 
 import Foundation
 import UIKit
+import SimpleAnimation
 
 extension UIView {
     
-    func fadeIn() {
+    func customFadeIn() {
         UIView.animateWithDuration(1.0, animations: {self.alpha = 1.0})
     }
     
-    func fadeOut() {
+    func customFadeOut() {
         UIView.animateWithDuration(1.0, animations: {self.alpha = 0.0})
     }
     
@@ -31,7 +32,6 @@ extension UIView {
             })
         })
     }
-
 
 
 }

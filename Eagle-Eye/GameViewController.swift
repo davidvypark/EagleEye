@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import PuzzleAnimation
+import SimpleAnimation
+import SnapKit
 
 class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, AVAudioPlayerDelegate {
 	
@@ -18,19 +20,23 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     var round = 0
     var highscore = 0
     var lives = 5
-    var randomColor = UIColor()
+    var gameColor = UIColor()
     var currentDimension: Int!
     var randomBlockIndex: Int!
     var soundOn = true
+	var isRandom = false
     
     var livesLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
     var notifyLabel = UILabel()
     var audioPlayer = AVAudioPlayer()
     var muteButton = UIButton(type: UIButtonType.Custom) as UIButton
-    
+	var menuButton = UIButton()
+	
     private var backwardAnimation: PuzzleAnimation?
 	
 	override func viewWillAppear(animated: Bool) {
+		navigationController?.setNavigationBarHidden(true, animated: false)
+		self.automaticallyAdjustsScrollViewInsets = false
 		loadData()
 	}
 	
@@ -42,6 +48,7 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     override func viewDidLoad() {
         super.viewDidLoad()
 		loadData()
+	
         muteButton.setImage(UIImage(named: "sound"), forState: .Normal)
         
         nextRound()
@@ -106,7 +113,7 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         if (round < 7) {
             notifyLabel.text = "one of these does not belong"
             if (round == 6) {
-                notifyLabel.fadeOut()
+                notifyLabel.customFadeOut()
             }
         } else if (round % 25 == 0) {
             notifyLabel.alpha = 0.0
@@ -126,22 +133,42 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         } else {
             muteButton.setImage(UIImage(named: "mute"), forState: .Normal)
         }
-
+		
+		view.addSubview(menuButton)
+		menuButton.snp_makeConstraints { (make) in
+			make.width.equalTo(view.snp_width).dividedBy(7)
+			make.height.equalTo(view.snp_width).dividedBy(7)
+			make.centerX.equalTo(view.snp_centerX).dividedBy(3.2)
+			make.centerY.equalTo(view.snp_centerY).multipliedBy(1.5)
+		}
+		menuButton.backgroundColor = UIColor.pastelDarkBlue()
+		menuButton.setTitle("< Menu", forState: .Normal)
+		menuButton.titleLabel?.font = UIFont(name: "Avenir-HeavyOblique", size: menuButton.titleLabel!.font.pointSize)
+		menuButton.titleLabel?.adjustsFontSizeToFitWidth = true
+		menuButton.layer.cornerRadius = 10
+		menuButton.enabled = false
+		menuButton.hidden = true
+		menuButton.addTarget(self, action: #selector(menuButtonPressed), forControlEvents: .TouchUpInside)
     }
     
     func gameOverScene() {
         
         notifyLabel.alpha = 0.0
         notifyLabel.text = "Game Over"
-        notifyLabel.fadeIn()
+        notifyLabel.customFadeIn()
         
         let resetButton = UIButton(frame: CGRectMake(0, 0, 200, 40))
         resetButton.setTitle("~NEW GAME~", forState: .Normal)
+		resetButton.titleLabel?.font = UIFont(name: "Avenir-MediumOblique", size: resetButton.titleLabel!.font.pointSize)
         resetButton.addTarget(self, action: #selector(resetButtonPressed), forControlEvents: .TouchUpInside)
         resetButton.setTitleColor(UIColor.wetAsphaltColor(), forState: .Normal)
         self.view.addSubview(resetButton)
         resetButton.center = CGPointMake(self.view.frame.width/2, (7/8)*self.view.frame.height)
-        resetButton.backgroundColor = UIColor.concreteColor()
+        resetButton.backgroundColor = UIColor.pastelGreen()
+		resetButton.layer.cornerRadius = 20
+		
+		menuButton.enabled = true
+		menuButton.hidden = false
     }
     
     func resetButtonPressed(sender: UIButton) {
@@ -158,13 +185,13 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
         
-        let normalHexValues = randomColor.getHexComponent()
+        let normalHexValues = gameColor.getHexComponent()
         let offsetValue = CGFloat(hexOffsetValue(round))
         let offSetColor = UIColor(red: normalHexValues![0] - offsetValue, green: normalHexValues![1] - offsetValue, blue: normalHexValues![2] - offsetValue, alpha: 1)
         if (indexPath.row == randomBlockIndex) {
             cell.backgroundColor = offSetColor
         } else {
-            cell.backgroundColor = randomColor
+            cell.backgroundColor = gameColor
         }
         
         return cell
@@ -179,22 +206,23 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
                 if ((round + 1) % 25 == 0) {                                    //+1 life every 25 levels
                     lives += 1
                 }
-				//pop sound
 				self.popSound()
 				
-				
-				
-				
-				
-				
-				if (round >= highscore) {
-					highscore = round + 1
+				if (isRandom) {
+					if (round >= highscore) {
+						highscore = round + 1
+					}
 				}
 
                 nextRound()
             } else {
                 lives -= 1
-                
+
+				notifyLabel.text = "-1 Life"
+				notifyLabel.font = UIFont(name: "Helvetica", size: 30)
+				notifyLabel.fadeIn()
+				notifyLabel.shake()
+				
                 if (lives == 0) {
                     gameOverScene()
                     self.livesLabel.text = "Lives: " + String(lives)
@@ -210,8 +238,10 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     }
     
     func nextRound() {
-        
-        randomColor = UIColor.randomCustomColor()
+		if (isRandom) {
+			gameColor = UIColor.randomCustomColor()
+		}
+	
         round += 1
         
         currentDimension = generateDimensionsOfGrid(round)
@@ -264,7 +294,15 @@ class GameViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
 		} catch {
 			//print("Error getting the audio file")
 		}
-
+	}
+	
+	func menuButtonPressed() {
+		navigationController?.popViewControllerAnimated(true)
+		
+		UIView.animateWithDuration(0.75, animations: { () -> Void in
+			UIView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
+			UIView.setAnimationTransition(UIViewAnimationTransition.FlipFromLeft, forView: self.navigationController!.view!, cache: false)
+		})
 	}
 	
 

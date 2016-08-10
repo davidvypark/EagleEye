@@ -11,7 +11,24 @@ extension UIColor {
     convenience init(r: Int, g:Int , b:Int) {
         self.init(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1.0)
     }
-    
+	
+	//Pastels
+	
+	class func pastelDarkBlue()->UIColor {
+		return UIColor(r: 119, g: 158, b: 203)
+	}
+	
+	class func pastelRed()->UIColor {
+		return UIColor(r: 255, g: 105, b: 97)
+	}
+	
+	class func pastelGreen()->UIColor {
+		return UIColor(r: 119, g: 190, b: 119)
+	}
+	
+	
+	//Custom Colors
+	
     class func turquoiseColor()->UIColor {
         return UIColor(r: 26, g: 188, b: 156)
     }
@@ -108,7 +125,6 @@ extension UIColor {
             return nil
         }
     }
-    
     
     
 }

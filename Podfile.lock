@@ -4,19 +4,22 @@ PODS:
   - Fabric (1.6.7)
   - PuzzleAnimation (1.1.1)
   - SimpleAnimation (0.2.0)
+  - SnapKit (0.21.1)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
   - PuzzleAnimation (~> 1.1)
   - SimpleAnimation
+  - SnapKit
 
 SPEC CHECKSUMS:
   Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   PuzzleAnimation: 8118d850cafb4ff120d18f04e641c6a687f3c8c0
   SimpleAnimation: e225b660010ea29d72d4889daebf07a3f4c6607f
+  SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
 
-PODFILE CHECKSUM: 18fd40b02a01039645eda92260d94afe0568fe65
+PODFILE CHECKSUM: e05a407c885d3977038df4a6ee3b5faf957c9b37
 
 COCOAPODS: 1.0.1

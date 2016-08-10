@@ -7,122 +7,171 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D6A8CE216C6F2754519D8B17E407A0F /* Pods-Eagle-Eye-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC83A63DE5B0E499DFAC141002438A8 /* Pods-Eagle-Eye-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24E5221984EDA74887AE55D742BA1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		2B0B5D47AE63370488ABC42921EFA1A8 /* PuzzleAnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877D0480E763121B17C0DB206527728E /* PuzzleAnimationConfiguration.swift */; };
-		310503E9EC457E86AFF272D3C8A49BDB /* ArrayRemoveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD4221A99EA2FDE80B76F3B38811E9 /* ArrayRemoveObject.swift */; };
-		3B3A9585BB9C06D1C7F45E011BE4E648 /* Pods-Eagle-Eye-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A9B150DB88C9CAED955373684C93 /* Pods-Eagle-Eye-dummy.m */; };
-		3F934FAC85897FAFAC0DCF325A2C7B64 /* PieceAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B8F135A172EBFC551BA6855524816 /* PieceAnimator.swift */; };
-		4F933E73467E3DE5CE1CED763F057B71 /* PuzzleAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ED89F0ADAFD526FB7AAEAD8B63C24 /* PuzzleAnimation-dummy.m */; };
-		6DFFE55987191A0368A00C74A9DD87A7 /* SimpleAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F55E9D9C6EAAB7D910B56FB59AE1A7FB /* SimpleAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75D4AEF1950CB3300A477591E08647D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		7A176FCE58932BC8721D2BBD87204E2B /* PiecePositioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E59B9910C0284C2EC50A84D6F63B46 /* PiecePositioner.swift */; };
-		7FC9206E87BBD62E262640A617AD0A3F /* PuzzleAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D962A7B7D988377DC1F424FAF102C629 /* PuzzleAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89D5359D7BBE3023594665C035294CB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		9F4E8EAC3FA9A9D03978E4948D9EFA02 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A7B9E3FCBC5EBBBE9CBF103CEA9B57 /* Random.swift */; };
-		B15D339974D786215CE17E978FCFEB23 /* PiecesCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76CC35D299A038041F87C03F0350D4 /* PiecesCreator.swift */; };
-		B30332436465B510F670082F8947359A /* CollectionShuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225708CF47590AF3FC71A2D9D5934D9A /* CollectionShuffle.swift */; };
-		C4EB38D178580E2059409072914F906B /* PieceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A2B5C17BFA6024D7720492587DDC /* PieceAnimation.swift */; };
-		CBF3E722D8115E48F400A7F87C768B6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		D39D022D4C95FAA1C31034AD6BE05AB8 /* SimpleAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9874B174865B0B402AF7234FD2C1BF11 /* SimpleAnimation-dummy.m */; };
-		D51A42AD52F2F8EAD267F50C496A127C /* UIView+SimpleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAEFED05A91F957EF05657A35B772D /* UIView+SimpleAnimation.swift */; };
-		D7A03482F037E1CF34135CA547E10C00 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85900A6E24223C1C0325BB92A5851028 /* Piece.swift */; };
-		E48328700769969CA31F62586ADA4737 /* PuzzleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079C75C5299F825475C06B9170EFA27 /* PuzzleAnimation.swift */; };
-		E61E1C02EBF09C26802C2B4B2422A0B8 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 441D43CB2B6582E7B617355038FD6224 /* Info.plist */; };
+		046628D951050C30AB1B05FDECCB48B3 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F3561417CD9CE73AE9D04BD54DC5F /* ViewController+SnapKit.swift */; };
+		08DDA9DF572F38B2CE73A37311C24CFF /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9290EB031D3112641B70BAB278F073 /* Constraint.swift */; };
+		09E577186E98739C98F00F496EA60565 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE127CF1DC5F5488AC318462D629339D /* SnapKit-dummy.m */; };
+		16EA7707390E8F590C804F99A760312F /* Pods-Eagle-Eye-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC83A63DE5B0E499DFAC141002438A8 /* Pods-Eagle-Eye-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5B4B617A47D98EDF0C65E7502CA77C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 9B368D98B004D56072B73C9158308E4A /* Info.plist */; };
+		1D67DF957EC34FADD99BE626A5D95971 /* PuzzleAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1FAC8D52236D0919BC3A6C2B29B8FC /* PuzzleAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29303F66D6418CAB5CE6E5A1A60534E5 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B981C3CB1A580C5A94A579D4EB67A567 /* ConstraintMaker.swift */; };
+		2BFE2FF5A92E670A86CEBC785DEAE708 /* PuzzleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2870B7A85D9692F91F068E5D932A9358 /* PuzzleAnimation.swift */; };
+		2DF48EBD13108274D50F74A9AD76A69F /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CD2642F846272B5A6C41AF9327194B3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3273A2586694FDA4FC87E0AAFA01AEE9 /* PieceAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E4C718EE3026CA4A4606DF3E9F61C /* PieceAnimator.swift */; };
+		329482151BDC5E96FA24CBC296F12424 /* PiecesCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCCFCED8DF409B1B273D2D65F3BAB0 /* PiecesCreator.swift */; };
+		37EDB86A6A8C4DCE2CFD71939822B6E5 /* SimpleAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A225D15F513FDD053E20F40AF1EC113 /* SimpleAnimation-dummy.m */; };
+		39E598F35AD8D3B9332DCD8881C37534 /* Pods-Eagle-Eye-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A9B150DB88C9CAED955373684C93 /* Pods-Eagle-Eye-dummy.m */; };
+		3FD3AC1895706C02FB1631EE947E9B12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		414BB277DF9BF8DEC6D98F99E50709A0 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE3F42C4C5F440502EFD88CC5C7832A /* LayoutConstraint.swift */; };
+		54EDE2F1A30FCEA1A5BF42A46DFC6A67 /* PuzzleAnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DFE8920F8CAFFD0FBD2F9580552E0B /* PuzzleAnimationConfiguration.swift */; };
+		61BCD04667E94419F65D6C7C7DEA9632 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF893C0C7A2C61397CC50063807816CE /* ConstraintRelation.swift */; };
+		641AB4D4BF05833B7F5E2E8FD1190FBC /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9879CA88A3A736278C98DF44A571FEA /* Random.swift */; };
+		6A70007563772813C21D6EDB1421C023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		6B3E4A23618268A0B86480ADDA8D7152 /* PuzzleAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A43FC54E8F432A99C919611C4212F84 /* PuzzleAnimation-dummy.m */; };
+		6CB69C1CBF6E8B007F4D59D81F9E6E22 /* CollectionShuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9429548CFC32B34C86AC333667F9028 /* CollectionShuffle.swift */; };
+		7D4C2FD3D443F5AA327720A2BF40C395 /* PieceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755773F16CC5B176725FD89791EF38AE /* PieceAnimation.swift */; };
+		807C8AB5B0F0B161A72B91960117A4D0 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B00D7FB7651239E0A7C67FA80B3E12 /* ConstraintAttributes.swift */; };
+		809A8728D0D8D763794FE0302701D7F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		81542B27FDAD4784F7AB62903C69B85D /* ArrayRemoveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06B889D01261B91D4AEF57D3B21E9 /* ArrayRemoveObject.swift */; };
+		8273B50FD39EB44E9D3E8EA290EAC325 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		A5ACDB2B2C2DA41F328563DB82D613A5 /* SimpleAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A99A05D5E16DA72766FA16C9D7735234 /* SimpleAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8124D0E2B6C616B25B67A04CE642728 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2532ACC4FFF179E3FC26050C4D441DF4 /* View+SnapKit.swift */; };
+		A83CD913C2D48CD4514C4976E4228103 /* PiecePositioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8327C6A57EF6C96158555FF7A150E /* PiecePositioner.swift */; };
+		AC28F7F07BEEB3B72C68209457807514 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0351A955A4706136588D5D40F70DAC2F /* SnapKit.swift */; };
+		B7AAF87943166A4D6D47755A7C37294F /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17F9B8769177EFF0377DE0E1325D7A /* Debugging.swift */; };
+		B9B74C9F46B66510D9AECD5F9314A30F /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266181E81BF9A8B66C7E0C925E61981 /* ConstraintDescription.swift */; };
+		BF5A486BD2A993D1B1DF7C6CF7012CA0 /* UIView+SimpleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14186D9239633005ED9A616854A1F7 /* UIView+SimpleAnimation.swift */; };
+		C3EAC5B5054C22622B647B93F56C2FD1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E68BF49F07369809A5C317D70BAA9 /* ConstraintItem.swift */; };
+		C82EB335B4D52F8533C9ED98A3BDF0DD /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985AD00F2FC14096A0DAC67FA20DCF05 /* Piece.swift */; };
+		E1834155CA23036C5499B7B49201BD6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		F1CBEACA3AF0C2D4C1768F1DFCA53911 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAE187705F19EA293B2B9C28F33EA10 /* EdgeInsets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		207C20A9AF58CA2C0CF5EBFAF59EBB28 /* PBXContainerItemProxy */ = {
+		20AC166A833FABA3C8392992D2AB930F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A9E5ABE5886F8DD20F833605B989C43A;
-			remoteInfo = PuzzleAnimation;
+			remoteGlobalIDString = B43E6583D8E76796D52B0C1A191DD440;
+			remoteInfo = SnapKit;
 		};
-		2A1F9915C3D2F6A8F296835C315FDF61 /* PBXContainerItemProxy */ = {
+		842723D144B63E626A615DA696B38FBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FAE389CD249C1E27365E7849CF1C61B5;
+			remoteGlobalIDString = 1850DA04969A0A4B370702A84D4561C8;
 			remoteInfo = SimpleAnimation;
+		};
+		A13AD4C3A39A6321CA70CBC70D8D63BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7004EE2B77FEF16158C04C97B06FBF9;
+			remoteInfo = PuzzleAnimation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010B0CC63BBA795F140EF8B21B5C34DF /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
-		01A7B9E3FCBC5EBBBE9CBF103CEA9B57 /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Source/Private/External/Random.swift; sourceTree = "<group>"; };
+		0351A955A4706136588D5D40F70DAC2F /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
 		04387C371F924AC36B9CACF1CB0176B7 /* Pods-Eagle-Eye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eagle-Eye.debug.xcconfig"; sourceTree = "<group>"; };
-		05146123ABDC03565E0DA73208756B83 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
-		06A11E32F7967D49810FF13BEC289AFA /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
-		1218B77B26C5825E4595C5A88127EFAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		128B27FE681DCDFC712284DF6EED0258 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B00D7FB7651239E0A7C67FA80B3E12 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		1025BD41F43BFC3D432E63B2AAAAB17F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15295643F6A24EAD03A4AC118E21D163 /* Pods-Eagle-Eye-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eagle-Eye-acknowledgements.plist"; sourceTree = "<group>"; };
 		179CB33626BCA36E1991BCE9FFCE0D4A /* Pods-Eagle-Eye-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eagle-Eye-frameworks.sh"; sourceTree = "<group>"; };
-		17E091323163A43818E0DE51A6AD4B1B /* PuzzleAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PuzzleAnimation.xcconfig; sourceTree = "<group>"; };
-		21BD13E12422CFA29AC4F371346EF5BB /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
-		225708CF47590AF3FC71A2D9D5934D9A /* CollectionShuffle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionShuffle.swift; path = Source/Private/External/CollectionShuffle.swift; sourceTree = "<group>"; };
-		232B8F135A172EBFC551BA6855524816 /* PieceAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieceAnimator.swift; path = Source/Private/PieceAnimator.swift; sourceTree = "<group>"; };
-		27AAEFED05A91F957EF05657A35B772D /* UIView+SimpleAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SimpleAnimation.swift"; path = "Source/UIView+SimpleAnimation.swift"; sourceTree = "<group>"; };
-		2AB230B29FB2A6C9377F3E2C29C75A12 /* SimpleAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimpleAnimation.modulemap; sourceTree = "<group>"; };
+		18690674A4A911DEE915CFEFC2702AFB /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		1A225D15F513FDD053E20F40AF1EC113 /* SimpleAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleAnimation-dummy.m"; sourceTree = "<group>"; };
+		1F383293A9D8301ADF619E12C9DEF672 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		1FA06B889D01261B91D4AEF57D3B21E9 /* ArrayRemoveObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayRemoveObject.swift; path = Source/Private/External/ArrayRemoveObject.swift; sourceTree = "<group>"; };
+		2532ACC4FFF179E3FC26050C4D441DF4 /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
+		2870B7A85D9692F91F068E5D932A9358 /* PuzzleAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PuzzleAnimation.swift; path = Source/Public/PuzzleAnimation.swift; sourceTree = "<group>"; };
 		2B6E8EEE66AB39577295B7AB92223D4D /* Pods-Eagle-Eye-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eagle-Eye-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2C43BF7A8861907F40A9EDB05D868597 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		2E6C6B981A7B6B019A2A83224337079F /* Pods_Eagle_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eagle_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE3F42C4C5F440502EFD88CC5C7832A /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		2D21DA569E8195067E94F8377A145ADC /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F47BB9C674907AE691185C58F269F4C /* PuzzleAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PuzzleAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F5A03E5823EFE8E2F568201D1D5289 /* SimpleAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAnimation-prefix.pch"; sourceTree = "<group>"; };
 		3BE78745620EEDB4F787A6DE86152D3F /* Pods-Eagle-Eye.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Eagle-Eye.modulemap"; sourceTree = "<group>"; };
-		4079C75C5299F825475C06B9170EFA27 /* PuzzleAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PuzzleAnimation.swift; path = Source/Public/PuzzleAnimation.swift; sourceTree = "<group>"; };
-		441D43CB2B6582E7B617355038FD6224 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
-		4D9B7DB84EC06A410AE29CDB60E476BF /* SimpleAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleAnimation.xcconfig; sourceTree = "<group>"; };
-		4E56F90577C487E65F385D7FE4AFB113 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		52663872B044B1C3B0C2FF2CDB0640C6 /* SimpleAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B6A2B5C17BFA6024D7720492587DDC /* PieceAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieceAnimation.swift; path = Source/Private/PieceAnimation.swift; sourceTree = "<group>"; };
-		725859D8784E7B16290D3B74F4214DDA /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
-		760ED89F0ADAFD526FB7AAEAD8B63C24 /* PuzzleAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PuzzleAnimation-dummy.m"; sourceTree = "<group>"; };
+		3CAE187705F19EA293B2B9C28F33EA10 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
+		4266181E81BF9A8B66C7E0C925E61981 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		74948603902CAC6855BF080AB2E87A0F /* SimpleAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		755773F16CC5B176725FD89791EF38AE /* PieceAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieceAnimation.swift; path = Source/Private/PieceAnimation.swift; sourceTree = "<group>"; };
+		779F3561417CD9CE73AE9D04BD54DC5F /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		79F8327C6A57EF6C96158555FF7A150E /* PiecePositioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PiecePositioner.swift; path = Source/Private/PiecePositioner.swift; sourceTree = "<group>"; };
+		7CD2642F846272B5A6C41AF9327194B3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		7E09ADDD772DB5137FA2058A60F36F3B /* Pods-Eagle-Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eagle-Eye.release.xcconfig"; sourceTree = "<group>"; };
-		7F76CC35D299A038041F87C03F0350D4 /* PiecesCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PiecesCreator.swift; path = Source/Private/PiecesCreator.swift; sourceTree = "<group>"; };
-		80CD4221A99EA2FDE80B76F3B38811E9 /* ArrayRemoveObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayRemoveObject.swift; path = Source/Private/External/ArrayRemoveObject.swift; sourceTree = "<group>"; };
-		8158961C8EB7AB8D18A3E98949568567 /* PuzzleAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PuzzleAnimation-prefix.pch"; sourceTree = "<group>"; };
-		85900A6E24223C1C0325BB92A5851028 /* Piece.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Piece.swift; path = Source/Private/Piece.swift; sourceTree = "<group>"; };
-		86E59B9910C0284C2EC50A84D6F63B46 /* PiecePositioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PiecePositioner.swift; path = Source/Private/PiecePositioner.swift; sourceTree = "<group>"; };
-		877D0480E763121B17C0DB206527728E /* PuzzleAnimationConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PuzzleAnimationConfiguration.swift; path = Source/Public/PuzzleAnimationConfiguration.swift; sourceTree = "<group>"; };
+		86FC48A4B4EB5580040CE27AAC3AC4B5 /* PuzzleAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PuzzleAnimation.xcconfig; sourceTree = "<group>"; };
+		8C2696E7378424EA4D65D5BC5195B955 /* PuzzleAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PuzzleAnimation.modulemap; sourceTree = "<group>"; };
 		8D1D7ED82C44EC64AB7DB6A98859B074 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1FAC8D52236D0919BC3A6C2B29B8FC /* PuzzleAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PuzzleAnimation-umbrella.h"; sourceTree = "<group>"; };
+		8D9E68BF49F07369809A5C317D70BAA9 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		8E14186D9239633005ED9A616854A1F7 /* UIView+SimpleAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SimpleAnimation.swift"; path = "Source/UIView+SimpleAnimation.swift"; sourceTree = "<group>"; };
 		8FC83A63DE5B0E499DFAC141002438A8 /* Pods-Eagle-Eye-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eagle-Eye-umbrella.h"; sourceTree = "<group>"; };
+		9144EC0C3947BE97201F0C4F8BA9C59D /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9874B174865B0B402AF7234FD2C1BF11 /* SimpleAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleAnimation-dummy.m"; sourceTree = "<group>"; };
+		985AD00F2FC14096A0DAC67FA20DCF05 /* Piece.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Piece.swift; path = Source/Private/Piece.swift; sourceTree = "<group>"; };
+		991E8705664FDD3ECDB455399E50A143 /* SimpleAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimpleAnimation.modulemap; sourceTree = "<group>"; };
+		996FFE484DE2CD462E3DDC8BB62AC1AB /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		9A43FC54E8F432A99C919611C4212F84 /* PuzzleAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PuzzleAnimation-dummy.m"; sourceTree = "<group>"; };
+		9B368D98B004D56072B73C9158308E4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
+		9B72D0C4EF9AB12496C0D9E4C8311D3C /* Pods_Eagle_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eagle_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D389B87523AB642071A5F6891E43129 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1B6CE2DA399C6F80FA463111729F99 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A30AD48C23203D36ABD65D7D7035A7CB /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
-		A79031A7D3825F8AE39CC18E731FA0F6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		A3257F741BE58FA272A1C4E3A0AE5889 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		A99A05D5E16DA72766FA16C9D7735234 /* SimpleAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAnimation-umbrella.h"; sourceTree = "<group>"; };
+		AB777964678917E8D12ED44E232515AA /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		B0F1A9B150DB88C9CAED955373684C93 /* Pods-Eagle-Eye-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eagle-Eye-dummy.m"; sourceTree = "<group>"; };
-		BB41FFC074CD1621FE1196EC1D219C03 /* SimpleAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAnimation-prefix.pch"; sourceTree = "<group>"; };
-		BC1574D9677A18BC4E859F1B897584D7 /* PuzzleAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PuzzleAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DFE8920F8CAFFD0FBD2F9580552E0B /* PuzzleAnimationConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PuzzleAnimationConfiguration.swift; path = Source/Public/PuzzleAnimationConfiguration.swift; sourceTree = "<group>"; };
+		B3827E5B79F4D6C030C70910ADE9253A /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		B836BF17AE2787E060D4DABC645A6675 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B981C3CB1A580C5A94A579D4EB67A567 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		BCA65784DD5BE6C5484DA9E45963E741 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		BDE93EC8D1F3AD1B871EBECFDC20F30D /* PuzzleAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PuzzleAnimation-prefix.pch"; sourceTree = "<group>"; };
+		BE127CF1DC5F5488AC318462D629339D /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		C8B4457E4E44D4754256AF3D48CF4C84 /* Pods-Eagle-Eye-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eagle-Eye-resources.sh"; sourceTree = "<group>"; };
-		CFC21C1DBD8E3B85CA0524D34EBA5B46 /* PuzzleAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PuzzleAnimation.modulemap; sourceTree = "<group>"; };
-		D962A7B7D988377DC1F424FAF102C629 /* PuzzleAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PuzzleAnimation-umbrella.h"; sourceTree = "<group>"; };
+		CA9290EB031D3112641B70BAB278F073 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		CB17F9B8769177EFF0377DE0E1325D7A /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D4CCCFCED8DF409B1B273D2D65F3BAB0 /* PiecesCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PiecesCreator.swift; path = Source/Private/PiecesCreator.swift; sourceTree = "<group>"; };
+		D9879CA88A3A736278C98DF44A571FEA /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Source/Private/External/Random.swift; sourceTree = "<group>"; };
+		DD8E4C718EE3026CA4A4606DF3E9F61C /* PieceAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieceAnimator.swift; path = Source/Private/PieceAnimator.swift; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F55E9D9C6EAAB7D910B56FB59AE1A7FB /* SimpleAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAnimation-umbrella.h"; sourceTree = "<group>"; };
+		E9429548CFC32B34C86AC333667F9028 /* CollectionShuffle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionShuffle.swift; path = Source/Private/External/CollectionShuffle.swift; sourceTree = "<group>"; };
+		EF893C0C7A2C61397CC50063807816CE /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		F308CD0274590AE9E7D06AA973B1E193 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		F916713569CCFC04AD74ACC4BF5BFEDB /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		FC9EAB98745BFB43CE2789FB5DEDF297 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		FF4D5019F3C70BAE04480B2D6E3D0B2D /* SimpleAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleAnimation.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		33F3A71F777F83BB8007B10B60F3F753 /* Frameworks */ = {
+		59696C24969AC78F704E5168D38BE16A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D4AEF1950CB3300A477591E08647D7 /* Foundation.framework in Frameworks */,
-				CBF3E722D8115E48F400A7F87C768B6F /* UIKit.framework in Frameworks */,
+				3FD3AC1895706C02FB1631EE947E9B12 /* Foundation.framework in Frameworks */,
+				6A70007563772813C21D6EDB1421C023 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4EFA5B84F1C0E918E9D21008BD98C81 /* Frameworks */ = {
+		7D6BD9C7D89C478E7B2FC1C94110AE7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E5221984EDA74887AE55D742BA1A2E /* Foundation.framework in Frameworks */,
+				8273B50FD39EB44E9D3E8EA290EAC325 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE3098BF2E1914E234356FFBF760CFB3 /* Frameworks */ = {
+		9CF44606E9804D71FDF0EB59AFA0D506 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D5359D7BBE3023594665C035294CB7 /* Foundation.framework in Frameworks */,
+				809A8728D0D8D763794FE0302701D7F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE7CDE43EA8B54810945C96CD960215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1834155CA23036C5499B7B49201BD6B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,29 +186,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		128AFA43E9C274AF57C8FF1AB97AD98D /* SimpleAnimation */ = {
+		0CB1AFEDFFFE0B5B266E764B914E43D5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				441D43CB2B6582E7B617355038FD6224 /* Info.plist */,
-				27AAEFED05A91F957EF05657A35B772D /* UIView+SimpleAnimation.swift */,
-				A77C76A1E1290601DC05600FF35768BD /* Support Files */,
+				9D389B87523AB642071A5F6891E43129 /* Info.plist */,
+				8C2696E7378424EA4D65D5BC5195B955 /* PuzzleAnimation.modulemap */,
+				86FC48A4B4EB5580040CE27AAC3AC4B5 /* PuzzleAnimation.xcconfig */,
+				9A43FC54E8F432A99C919611C4212F84 /* PuzzleAnimation-dummy.m */,
+				BDE93EC8D1F3AD1B871EBECFDC20F30D /* PuzzleAnimation-prefix.pch */,
+				8D1FAC8D52236D0919BC3A6C2B29B8FC /* PuzzleAnimation-umbrella.h */,
 			);
-			path = SimpleAnimation;
+			name = "Support Files";
+			path = "../Target Support Files/PuzzleAnimation";
 			sourceTree = "<group>";
 		};
-		1A53448C9FC8ABC7E0149BB89716F003 /* Crashlytics */ = {
+		3461D8B0E3DA417104DEB23A8BE67B5A /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				21BD13E12422CFA29AC4F371346EF5BB /* ANSCompatibility.h */,
-				06A11E32F7967D49810FF13BEC289AFA /* Answers.h */,
-				725859D8784E7B16290D3B74F4214DDA /* CLSAttributes.h */,
-				A30AD48C23203D36ABD65D7D7035A7CB /* CLSLogging.h */,
-				05146123ABDC03565E0DA73208756B83 /* CLSReport.h */,
-				4E56F90577C487E65F385D7FE4AFB113 /* CLSStackFrame.h */,
-				010B0CC63BBA795F140EF8B21B5C34DF /* Crashlytics.h */,
-				B474A80CD68EFC30A7BB1E32D6E50ADF /* Frameworks */,
+				96377405FA0530F1ECA0286F1B48DE4A /* Frameworks */,
 			);
-			path = Crashlytics;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -170,41 +216,86 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		767E068787E14A4CFAEDB39B3EF83933 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B836BF17AE2787E060D4DABC645A6675 /* Info.plist */,
+				9144EC0C3947BE97201F0C4F8BA9C59D /* SnapKit.modulemap */,
+				BCA65784DD5BE6C5484DA9E45963E741 /* SnapKit.xcconfig */,
+				BE127CF1DC5F5488AC318462D629339D /* SnapKit-dummy.m */,
+				B3827E5B79F4D6C030C70910ADE9253A /* SnapKit-prefix.pch */,
+				7CD2642F846272B5A6C41AF9327194B3 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				EA842347CD1B13B51A5A5F5790A5B7A5 /* Pods */,
-				9F5D480999370A9184A1D0BED5030611 /* Products */,
+				8FF4DF19FE99EB52E1AB0A913F31A7F1 /* Pods */,
+				979149817871BFC29DB29430C7C67282 /* Products */,
 				089FF266E3D0DE5F7592568E30D58BF7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9E253E49AEED2843F90E682BBFD4F081 /* PuzzleAnimation */ = {
+		8C81494B5950E0ACA9B1819FE5411439 /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
-				80CD4221A99EA2FDE80B76F3B38811E9 /* ArrayRemoveObject.swift */,
-				225708CF47590AF3FC71A2D9D5934D9A /* CollectionShuffle.swift */,
-				85900A6E24223C1C0325BB92A5851028 /* Piece.swift */,
-				65B6A2B5C17BFA6024D7720492587DDC /* PieceAnimation.swift */,
-				232B8F135A172EBFC551BA6855524816 /* PieceAnimator.swift */,
-				86E59B9910C0284C2EC50A84D6F63B46 /* PiecePositioner.swift */,
-				7F76CC35D299A038041F87C03F0350D4 /* PiecesCreator.swift */,
-				4079C75C5299F825475C06B9170EFA27 /* PuzzleAnimation.swift */,
-				877D0480E763121B17C0DB206527728E /* PuzzleAnimationConfiguration.swift */,
-				01A7B9E3FCBC5EBBBE9CBF103CEA9B57 /* Random.swift */,
-				DF8B4F0E19D8929661EF12F26DD6B658 /* Support Files */,
+				CA9290EB031D3112641B70BAB278F073 /* Constraint.swift */,
+				06B00D7FB7651239E0A7C67FA80B3E12 /* ConstraintAttributes.swift */,
+				4266181E81BF9A8B66C7E0C925E61981 /* ConstraintDescription.swift */,
+				8D9E68BF49F07369809A5C317D70BAA9 /* ConstraintItem.swift */,
+				B981C3CB1A580C5A94A579D4EB67A567 /* ConstraintMaker.swift */,
+				EF893C0C7A2C61397CC50063807816CE /* ConstraintRelation.swift */,
+				CB17F9B8769177EFF0377DE0E1325D7A /* Debugging.swift */,
+				3CAE187705F19EA293B2B9C28F33EA10 /* EdgeInsets.swift */,
+				2BE3F42C4C5F440502EFD88CC5C7832A /* LayoutConstraint.swift */,
+				0351A955A4706136588D5D40F70DAC2F /* SnapKit.swift */,
+				2532ACC4FFF179E3FC26050C4D441DF4 /* View+SnapKit.swift */,
+				779F3561417CD9CE73AE9D04BD54DC5F /* ViewController+SnapKit.swift */,
+				767E068787E14A4CFAEDB39B3EF83933 /* Support Files */,
 			);
-			path = PuzzleAnimation;
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		9F5D480999370A9184A1D0BED5030611 /* Products */ = {
+		8E3DB2803E5D43F6C88BAD1008C86CE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E6C6B981A7B6B019A2A83224337079F /* Pods_Eagle_Eye.framework */,
-				BC1574D9677A18BC4E859F1B897584D7 /* PuzzleAnimation.framework */,
-				52663872B044B1C3B0C2FF2CDB0640C6 /* SimpleAnimation.framework */,
+				F308CD0274590AE9E7D06AA973B1E193 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FF4DF19FE99EB52E1AB0A913F31A7F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8B535EC6BC3A70CDE0E0C1B0827AD91 /* Crashlytics */,
+				3461D8B0E3DA417104DEB23A8BE67B5A /* Fabric */,
+				A4996E4C89BED1E97001254D1B0B5660 /* PuzzleAnimation */,
+				B3A8F7C49E6DB57C876C614B75807A09 /* SimpleAnimation */,
+				8C81494B5950E0ACA9B1819FE5411439 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96377405FA0530F1ECA0286F1B48DE4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F1B6CE2DA399C6F80FA463111729F99 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		979149817871BFC29DB29430C7C67282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B72D0C4EF9AB12496C0D9E4C8311D3C /* Pods_Eagle_Eye.framework */,
+				2F47BB9C674907AE691185C58F269F4C /* PuzzleAnimation.framework */,
+				74948603902CAC6855BF080AB2E87A0F /* SimpleAnimation.framework */,
+				2D21DA569E8195067E94F8377A145ADC /* SnapKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,67 +318,61 @@
 			path = "Target Support Files/Pods-Eagle-Eye";
 			sourceTree = "<group>";
 		};
-		A581DC1FD148072C11ACAA611B6F374E /* Fabric */ = {
+		A4996E4C89BED1E97001254D1B0B5660 /* PuzzleAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				A9DD4ADC3C77825DB9AF06DF1702FE5B /* Frameworks */,
+				1FA06B889D01261B91D4AEF57D3B21E9 /* ArrayRemoveObject.swift */,
+				E9429548CFC32B34C86AC333667F9028 /* CollectionShuffle.swift */,
+				985AD00F2FC14096A0DAC67FA20DCF05 /* Piece.swift */,
+				755773F16CC5B176725FD89791EF38AE /* PieceAnimation.swift */,
+				DD8E4C718EE3026CA4A4606DF3E9F61C /* PieceAnimator.swift */,
+				79F8327C6A57EF6C96158555FF7A150E /* PiecePositioner.swift */,
+				D4CCCFCED8DF409B1B273D2D65F3BAB0 /* PiecesCreator.swift */,
+				2870B7A85D9692F91F068E5D932A9358 /* PuzzleAnimation.swift */,
+				B1DFE8920F8CAFFD0FBD2F9580552E0B /* PuzzleAnimationConfiguration.swift */,
+				D9879CA88A3A736278C98DF44A571FEA /* Random.swift */,
+				0CB1AFEDFFFE0B5B266E764B914E43D5 /* Support Files */,
 			);
-			path = Fabric;
+			path = PuzzleAnimation;
 			sourceTree = "<group>";
 		};
-		A77C76A1E1290601DC05600FF35768BD /* Support Files */ = {
+		B3A8F7C49E6DB57C876C614B75807A09 /* SimpleAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				1218B77B26C5825E4595C5A88127EFAC /* Info.plist */,
-				2AB230B29FB2A6C9377F3E2C29C75A12 /* SimpleAnimation.modulemap */,
-				4D9B7DB84EC06A410AE29CDB60E476BF /* SimpleAnimation.xcconfig */,
-				9874B174865B0B402AF7234FD2C1BF11 /* SimpleAnimation-dummy.m */,
-				BB41FFC074CD1621FE1196EC1D219C03 /* SimpleAnimation-prefix.pch */,
-				F55E9D9C6EAAB7D910B56FB59AE1A7FB /* SimpleAnimation-umbrella.h */,
+				9B368D98B004D56072B73C9158308E4A /* Info.plist */,
+				8E14186D9239633005ED9A616854A1F7 /* UIView+SimpleAnimation.swift */,
+				EAA815592AC250BB1665FC50F33CDE51 /* Support Files */,
+			);
+			path = SimpleAnimation;
+			sourceTree = "<group>";
+		};
+		E8B535EC6BC3A70CDE0E0C1B0827AD91 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				FC9EAB98745BFB43CE2789FB5DEDF297 /* ANSCompatibility.h */,
+				18690674A4A911DEE915CFEFC2702AFB /* Answers.h */,
+				AB777964678917E8D12ED44E232515AA /* CLSAttributes.h */,
+				A3257F741BE58FA272A1C4E3A0AE5889 /* CLSLogging.h */,
+				F916713569CCFC04AD74ACC4BF5BFEDB /* CLSReport.h */,
+				1F383293A9D8301ADF619E12C9DEF672 /* CLSStackFrame.h */,
+				996FFE484DE2CD462E3DDC8BB62AC1AB /* Crashlytics.h */,
+				8E3DB2803E5D43F6C88BAD1008C86CE9 /* Frameworks */,
+			);
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		EAA815592AC250BB1665FC50F33CDE51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1025BD41F43BFC3D432E63B2AAAAB17F /* Info.plist */,
+				991E8705664FDD3ECDB455399E50A143 /* SimpleAnimation.modulemap */,
+				FF4D5019F3C70BAE04480B2D6E3D0B2D /* SimpleAnimation.xcconfig */,
+				1A225D15F513FDD053E20F40AF1EC113 /* SimpleAnimation-dummy.m */,
+				39F5A03E5823EFE8E2F568201D1D5289 /* SimpleAnimation-prefix.pch */,
+				A99A05D5E16DA72766FA16C9D7735234 /* SimpleAnimation-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SimpleAnimation";
-			sourceTree = "<group>";
-		};
-		A9DD4ADC3C77825DB9AF06DF1702FE5B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A79031A7D3825F8AE39CC18E731FA0F6 /* Fabric.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B474A80CD68EFC30A7BB1E32D6E50ADF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2C43BF7A8861907F40A9EDB05D868597 /* Crashlytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DF8B4F0E19D8929661EF12F26DD6B658 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				128B27FE681DCDFC712284DF6EED0258 /* Info.plist */,
-				CFC21C1DBD8E3B85CA0524D34EBA5B46 /* PuzzleAnimation.modulemap */,
-				17E091323163A43818E0DE51A6AD4B1B /* PuzzleAnimation.xcconfig */,
-				760ED89F0ADAFD526FB7AAEAD8B63C24 /* PuzzleAnimation-dummy.m */,
-				8158961C8EB7AB8D18A3E98949568567 /* PuzzleAnimation-prefix.pch */,
-				D962A7B7D988377DC1F424FAF102C629 /* PuzzleAnimation-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PuzzleAnimation";
-			sourceTree = "<group>";
-		};
-		EA842347CD1B13B51A5A5F5790A5B7A5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1A53448C9FC8ABC7E0149BB89716F003 /* Crashlytics */,
-				A581DC1FD148072C11ACAA611B6F374E /* Fabric */,
-				9E253E49AEED2843F90E682BBFD4F081 /* PuzzleAnimation */,
-				128AFA43E9C274AF57C8FF1AB97AD98D /* SimpleAnimation */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
@@ -302,76 +387,48 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		008E6191B6F420DA7522FE92F852D9EB /* Headers */ = {
+		04015F33DF87A2301F4DF8219BA8EFB5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6A8CE216C6F2754519D8B17E407A0F /* Pods-Eagle-Eye-umbrella.h in Headers */,
+				2DF48EBD13108274D50F74A9AD76A69F /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B5E0A39C66682813488EAA1C82572C9 /* Headers */ = {
+		7DAF818EA7094DD1E2574C8ED6310C4B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFFE55987191A0368A00C74A9DD87A7 /* SimpleAnimation-umbrella.h in Headers */,
+				1D67DF957EC34FADD99BE626A5D95971 /* PuzzleAnimation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5A9435D97F5E0C3062275BF52625931 /* Headers */ = {
+		AB73B2FC98A044A1E6C8B1D74B9479A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FC9206E87BBD62E262640A617AD0A3F /* PuzzleAnimation-umbrella.h in Headers */,
+				A5ACDB2B2C2DA41F328563DB82D613A5 /* SimpleAnimation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8A86E2DC71A1E68DB0501189A33A72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EA7707390E8F590C804F99A760312F /* Pods-Eagle-Eye-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4ECE164E558973C5C7BC6111086C13F6 /* Pods-Eagle-Eye */ = {
+		1850DA04969A0A4B370702A84D4561C8 /* SimpleAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79A64673290FC1FD050CD6A216C2126F /* Build configuration list for PBXNativeTarget "Pods-Eagle-Eye" */;
+			buildConfigurationList = D58D93A63EF3B6A9F06650002EDC6575 /* Build configuration list for PBXNativeTarget "SimpleAnimation" */;
 			buildPhases = (
-				792E765EDFD0C92FC208146331849119 /* Sources */,
-				A4EFA5B84F1C0E918E9D21008BD98C81 /* Frameworks */,
-				008E6191B6F420DA7522FE92F852D9EB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BB58ABA53B5F82A431C1478200D4F1AC /* PBXTargetDependency */,
-				3224B16DDE9894C2AE879D31B5540963 /* PBXTargetDependency */,
-			);
-			name = "Pods-Eagle-Eye";
-			productName = "Pods-Eagle-Eye";
-			productReference = 2E6C6B981A7B6B019A2A83224337079F /* Pods_Eagle_Eye.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A9E5ABE5886F8DD20F833605B989C43A /* PuzzleAnimation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 80E8B583AF7DCF63ACCC5617310B1FD4 /* Build configuration list for PBXNativeTarget "PuzzleAnimation" */;
-			buildPhases = (
-				A35E089369727318428645A50955D60A /* Sources */,
-				EE3098BF2E1914E234356FFBF760CFB3 /* Frameworks */,
-				D5A9435D97F5E0C3062275BF52625931 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PuzzleAnimation;
-			productName = PuzzleAnimation;
-			productReference = BC1574D9677A18BC4E859F1B897584D7 /* PuzzleAnimation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FAE389CD249C1E27365E7849CF1C61B5 /* SimpleAnimation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 43985FB993B3E3656697FE35C19BB17B /* Build configuration list for PBXNativeTarget "SimpleAnimation" */;
-			buildPhases = (
-				82BB085DA3D901B9922F6BD588433175 /* Sources */,
-				33F3A71F777F83BB8007B10B60F3F753 /* Frameworks */,
-				8B5E0A39C66682813488EAA1C82572C9 /* Headers */,
+				D9A5B69EFF2B51B8F0756142406484D5 /* Sources */,
+				59696C24969AC78F704E5168D38BE16A /* Frameworks */,
+				AB73B2FC98A044A1E6C8B1D74B9479A9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -379,7 +436,61 @@
 			);
 			name = SimpleAnimation;
 			productName = SimpleAnimation;
-			productReference = 52663872B044B1C3B0C2FF2CDB0640C6 /* SimpleAnimation.framework */;
+			productReference = 74948603902CAC6855BF080AB2E87A0F /* SimpleAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E1229D8716FA7C7A81AF72E7F6A75C8 /* Pods-Eagle-Eye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DA0EB8BD9A7418433805B3CD930981F /* Build configuration list for PBXNativeTarget "Pods-Eagle-Eye" */;
+			buildPhases = (
+				8CB05E8DD46D710460C9A00D12080657 /* Sources */,
+				7D6BD9C7D89C478E7B2FC1C94110AE7B /* Frameworks */,
+				CD8A86E2DC71A1E68DB0501189A33A72 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B326D643F387048BAC3DF3136F51487 /* PBXTargetDependency */,
+				9F83D386F4B1762469C1B6D5F443C203 /* PBXTargetDependency */,
+				3B7D83929D9BB5D347BF8FB8A40E2021 /* PBXTargetDependency */,
+			);
+			name = "Pods-Eagle-Eye";
+			productName = "Pods-Eagle-Eye";
+			productReference = 9B72D0C4EF9AB12496C0D9E4C8311D3C /* Pods_Eagle_Eye.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7004EE2B77FEF16158C04C97B06FBF9 /* PuzzleAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9587ED6364C7124AACD0ED2952BDC5EC /* Build configuration list for PBXNativeTarget "PuzzleAnimation" */;
+			buildPhases = (
+				A63BAC53785FBC046F1CE9520567430A /* Sources */,
+				AAE7CDE43EA8B54810945C96CD960215 /* Frameworks */,
+				7DAF818EA7094DD1E2574C8ED6310C4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuzzleAnimation;
+			productName = PuzzleAnimation;
+			productReference = 2F47BB9C674907AE691185C58F269F4C /* PuzzleAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B43E6583D8E76796D52B0C1A191DD440 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 914B9F983043BCE32F3849360F5CBEC8 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				4E6375CE984BF94810B5E1C8159C1C1D /* Sources */,
+				9CF44606E9804D71FDF0EB59AFA0D506 /* Frameworks */,
+				04015F33DF87A2301F4DF8219BA8EFB5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 2D21DA569E8195067E94F8377A145ADC /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -399,72 +510,161 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9F5D480999370A9184A1D0BED5030611 /* Products */;
+			productRefGroup = 979149817871BFC29DB29430C7C67282 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4ECE164E558973C5C7BC6111086C13F6 /* Pods-Eagle-Eye */,
-				A9E5ABE5886F8DD20F833605B989C43A /* PuzzleAnimation */,
-				FAE389CD249C1E27365E7849CF1C61B5 /* SimpleAnimation */,
+				5E1229D8716FA7C7A81AF72E7F6A75C8 /* Pods-Eagle-Eye */,
+				A7004EE2B77FEF16158C04C97B06FBF9 /* PuzzleAnimation */,
+				1850DA04969A0A4B370702A84D4561C8 /* SimpleAnimation */,
+				B43E6583D8E76796D52B0C1A191DD440 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		792E765EDFD0C92FC208146331849119 /* Sources */ = {
+		4E6375CE984BF94810B5E1C8159C1C1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B3A9585BB9C06D1C7F45E011BE4E648 /* Pods-Eagle-Eye-dummy.m in Sources */,
+				08DDA9DF572F38B2CE73A37311C24CFF /* Constraint.swift in Sources */,
+				807C8AB5B0F0B161A72B91960117A4D0 /* ConstraintAttributes.swift in Sources */,
+				B9B74C9F46B66510D9AECD5F9314A30F /* ConstraintDescription.swift in Sources */,
+				C3EAC5B5054C22622B647B93F56C2FD1 /* ConstraintItem.swift in Sources */,
+				29303F66D6418CAB5CE6E5A1A60534E5 /* ConstraintMaker.swift in Sources */,
+				61BCD04667E94419F65D6C7C7DEA9632 /* ConstraintRelation.swift in Sources */,
+				B7AAF87943166A4D6D47755A7C37294F /* Debugging.swift in Sources */,
+				F1CBEACA3AF0C2D4C1768F1DFCA53911 /* EdgeInsets.swift in Sources */,
+				414BB277DF9BF8DEC6D98F99E50709A0 /* LayoutConstraint.swift in Sources */,
+				09E577186E98739C98F00F496EA60565 /* SnapKit-dummy.m in Sources */,
+				AC28F7F07BEEB3B72C68209457807514 /* SnapKit.swift in Sources */,
+				A8124D0E2B6C616B25B67A04CE642728 /* View+SnapKit.swift in Sources */,
+				046628D951050C30AB1B05FDECCB48B3 /* ViewController+SnapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82BB085DA3D901B9922F6BD588433175 /* Sources */ = {
+		8CB05E8DD46D710460C9A00D12080657 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61E1C02EBF09C26802C2B4B2422A0B8 /* Info.plist in Sources */,
-				D39D022D4C95FAA1C31034AD6BE05AB8 /* SimpleAnimation-dummy.m in Sources */,
-				D51A42AD52F2F8EAD267F50C496A127C /* UIView+SimpleAnimation.swift in Sources */,
+				39E598F35AD8D3B9332DCD8881C37534 /* Pods-Eagle-Eye-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A35E089369727318428645A50955D60A /* Sources */ = {
+		A63BAC53785FBC046F1CE9520567430A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310503E9EC457E86AFF272D3C8A49BDB /* ArrayRemoveObject.swift in Sources */,
-				B30332436465B510F670082F8947359A /* CollectionShuffle.swift in Sources */,
-				D7A03482F037E1CF34135CA547E10C00 /* Piece.swift in Sources */,
-				C4EB38D178580E2059409072914F906B /* PieceAnimation.swift in Sources */,
-				3F934FAC85897FAFAC0DCF325A2C7B64 /* PieceAnimator.swift in Sources */,
-				7A176FCE58932BC8721D2BBD87204E2B /* PiecePositioner.swift in Sources */,
-				B15D339974D786215CE17E978FCFEB23 /* PiecesCreator.swift in Sources */,
-				4F933E73467E3DE5CE1CED763F057B71 /* PuzzleAnimation-dummy.m in Sources */,
-				E48328700769969CA31F62586ADA4737 /* PuzzleAnimation.swift in Sources */,
-				2B0B5D47AE63370488ABC42921EFA1A8 /* PuzzleAnimationConfiguration.swift in Sources */,
-				9F4E8EAC3FA9A9D03978E4948D9EFA02 /* Random.swift in Sources */,
+				81542B27FDAD4784F7AB62903C69B85D /* ArrayRemoveObject.swift in Sources */,
+				6CB69C1CBF6E8B007F4D59D81F9E6E22 /* CollectionShuffle.swift in Sources */,
+				C82EB335B4D52F8533C9ED98A3BDF0DD /* Piece.swift in Sources */,
+				7D4C2FD3D443F5AA327720A2BF40C395 /* PieceAnimation.swift in Sources */,
+				3273A2586694FDA4FC87E0AAFA01AEE9 /* PieceAnimator.swift in Sources */,
+				A83CD913C2D48CD4514C4976E4228103 /* PiecePositioner.swift in Sources */,
+				329482151BDC5E96FA24CBC296F12424 /* PiecesCreator.swift in Sources */,
+				6B3E4A23618268A0B86480ADDA8D7152 /* PuzzleAnimation-dummy.m in Sources */,
+				2BFE2FF5A92E670A86CEBC785DEAE708 /* PuzzleAnimation.swift in Sources */,
+				54EDE2F1A30FCEA1A5BF42A46DFC6A67 /* PuzzleAnimationConfiguration.swift in Sources */,
+				641AB4D4BF05833B7F5E2E8FD1190FBC /* Random.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A5B69EFF2B51B8F0756142406484D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5B4B617A47D98EDF0C65E7502CA77C /* Info.plist in Sources */,
+				37EDB86A6A8C4DCE2CFD71939822B6E5 /* SimpleAnimation-dummy.m in Sources */,
+				BF5A486BD2A993D1B1DF7C6CF7012CA0 /* UIView+SimpleAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3224B16DDE9894C2AE879D31B5540963 /* PBXTargetDependency */ = {
+		3B7D83929D9BB5D347BF8FB8A40E2021 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SimpleAnimation;
-			target = FAE389CD249C1E27365E7849CF1C61B5 /* SimpleAnimation */;
-			targetProxy = 2A1F9915C3D2F6A8F296835C315FDF61 /* PBXContainerItemProxy */;
+			name = SnapKit;
+			target = B43E6583D8E76796D52B0C1A191DD440 /* SnapKit */;
+			targetProxy = 20AC166A833FABA3C8392992D2AB930F /* PBXContainerItemProxy */;
 		};
-		BB58ABA53B5F82A431C1478200D4F1AC /* PBXTargetDependency */ = {
+		9B326D643F387048BAC3DF3136F51487 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PuzzleAnimation;
-			target = A9E5ABE5886F8DD20F833605B989C43A /* PuzzleAnimation */;
-			targetProxy = 207C20A9AF58CA2C0CF5EBFAF59EBB28 /* PBXContainerItemProxy */;
+			target = A7004EE2B77FEF16158C04C97B06FBF9 /* PuzzleAnimation */;
+			targetProxy = A13AD4C3A39A6321CA70CBC70D8D63BA /* PBXContainerItemProxy */;
+		};
+		9F83D386F4B1762469C1B6D5F443C203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleAnimation;
+			target = 1850DA04969A0A4B370702A84D4561C8 /* SimpleAnimation */;
+			targetProxy = 842723D144B63E626A615DA696B38FBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2E02E6179DF6F5698BADEAD7ADBA18E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA65784DD5BE6C5484DA9E45963E741 /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3222DD3BC7DE31A6135810945FF74786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E09ADDD772DB5137FA2058A60F36F3B /* Pods-Eagle-Eye.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Eagle-Eye/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eagle_Eye;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,38 +703,9 @@
 			};
 			name = Release;
 		};
-		4731003A37F448365EF9F41839C760B9 /* Release */ = {
+		5B33BCEEC8A6C649417F4A5D166CC949 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D9B7DB84EC06A410AE29CDB60E476BF /* SimpleAnimation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimpleAnimation/SimpleAnimation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimpleAnimation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimpleAnimation/SimpleAnimation.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SimpleAnimation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		56D27473D4D93D88F023A621AB71586C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17E091323163A43818E0DE51A6AD4B1B /* PuzzleAnimation.xcconfig */;
+			baseConfigurationReference = BCA65784DD5BE6C5484DA9E45963E741 /* SnapKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -545,14 +716,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PuzzleAnimation/PuzzleAnimation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PuzzleAnimation/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PuzzleAnimation/PuzzleAnimation.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PuzzleAnimation;
+				PRODUCT_NAME = SnapKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -604,7 +775,96 @@
 			};
 			name = Debug;
 		};
-		6315A5005F592F4F6AC701F32450F15B /* Debug */ = {
+		8A5AB0CBC3031C29E326B4B7CCA207FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86FC48A4B4EB5580040CE27AAC3AC4B5 /* PuzzleAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PuzzleAnimation/PuzzleAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PuzzleAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PuzzleAnimation/PuzzleAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PuzzleAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90DDC8E837C34943A0E8928077C44547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86FC48A4B4EB5580040CE27AAC3AC4B5 /* PuzzleAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PuzzleAnimation/PuzzleAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PuzzleAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PuzzleAnimation/PuzzleAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PuzzleAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3833B1F8C26390532BACB4799AFC59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF4D5019F3C70BAE04480B2D6E3D0B2D /* SimpleAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleAnimation/SimpleAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleAnimation/SimpleAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SimpleAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC82ED85F00CD813D1CA560C70B9D8EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04387C371F924AC36B9CACF1CB0176B7 /* Pods-Eagle-Eye.debug.xcconfig */;
 			buildSettings = {
@@ -638,46 +898,13 @@
 			};
 			name = Debug;
 		};
-		6A20674743D6CD6BA546B21BF856700A /* Release */ = {
+		F77498608D1850AAE16A66BA465299B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E09ADDD772DB5137FA2058A60F36F3B /* Pods-Eagle-Eye.release.xcconfig */;
+			baseConfigurationReference = FF4D5019F3C70BAE04480B2D6E3D0B2D /* SimpleAnimation.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Eagle-Eye/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Eagle-Eye/Pods-Eagle-Eye.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Eagle_Eye;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7EF8CDAA2872264B8EB4CD3F045CEB30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D9B7DB84EC06A410AE29CDB60E476BF /* SimpleAnimation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -690,38 +917,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SimpleAnimation/SimpleAnimation.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SimpleAnimation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E33A58F93C03624C8714AE8C713C5026 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17E091323163A43818E0DE51A6AD4B1B /* PuzzleAnimation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PuzzleAnimation/PuzzleAnimation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PuzzleAnimation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PuzzleAnimation/PuzzleAnimation.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PuzzleAnimation;
+				PRODUCT_NAME = SimpleAnimation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -742,29 +939,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43985FB993B3E3656697FE35C19BB17B /* Build configuration list for PBXNativeTarget "SimpleAnimation" */ = {
+		7DA0EB8BD9A7418433805B3CD930981F /* Build configuration list for PBXNativeTarget "Pods-Eagle-Eye" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EF8CDAA2872264B8EB4CD3F045CEB30 /* Debug */,
-				4731003A37F448365EF9F41839C760B9 /* Release */,
+				BC82ED85F00CD813D1CA560C70B9D8EC /* Debug */,
+				3222DD3BC7DE31A6135810945FF74786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79A64673290FC1FD050CD6A216C2126F /* Build configuration list for PBXNativeTarget "Pods-Eagle-Eye" */ = {
+		914B9F983043BCE32F3849360F5CBEC8 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6315A5005F592F4F6AC701F32450F15B /* Debug */,
-				6A20674743D6CD6BA546B21BF856700A /* Release */,
+				5B33BCEEC8A6C649417F4A5D166CC949 /* Debug */,
+				2E02E6179DF6F5698BADEAD7ADBA18E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80E8B583AF7DCF63ACCC5617310B1FD4 /* Build configuration list for PBXNativeTarget "PuzzleAnimation" */ = {
+		9587ED6364C7124AACD0ED2952BDC5EC /* Build configuration list for PBXNativeTarget "PuzzleAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56D27473D4D93D88F023A621AB71586C /* Debug */,
-				E33A58F93C03624C8714AE8C713C5026 /* Release */,
+				90DDC8E837C34943A0E8928077C44547 /* Debug */,
+				8A5AB0CBC3031C29E326B4B7CCA207FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D58D93A63EF3B6A9F06650002EDC6575 /* Build configuration list for PBXNativeTarget "SimpleAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3833B1F8C26390532BACB4799AFC59E /* Debug */,
+				F77498608D1850AAE16A66BA465299B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
